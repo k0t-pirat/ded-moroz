@@ -13,7 +13,6 @@
 		<img src="img/header-background.jpg" alt="фон шапки">
 	</div>
 	<div class="container">
-		<title></title>
 		<p class="tel-number"></p>
 		<nav class="page-navigation">
 			<div class="page-navigation-list-wrapper">
@@ -109,12 +108,22 @@
 				<form>
 					<div class="congrats-form-top">
 						<h3>Рассчитайте стоимость поздравления</h3>
-						<select name="congrats-time">
-							<option value="1">18 декабря (15:00 - 17:00)</option>
-						</select>
-						<select name="congrats-type">
-							<option value="1">На дом</option>
-						</select>
+						<div class="custom-select">
+							<select name="congrats-time">
+								<option value="1">18 декабря (15:00 - 17:00)</option>
+								<option value="2">19 декабря (10:00 - 10:00)</option>
+								<option value="3">20 декабря (10:00 - 17:00)</option>
+								<option value="4">21 декабря (09:00 - 19:00)</option>
+								<option value="5">31 декабря (12:00 - 21:00)</option>
+							</select>
+						</div>
+						<div class="custom-select">
+							<select name="congrats-type">
+								<option value="1">На дом</option>
+								<option value="2">На дачу</option>
+								<option value="3">На работу</option>
+							</select>
+						</div>
 					</div>
 					<div class="congrats-dashed-block">
 						<p><span class="span-price-title">Цена за одно поздравление: </span><span class="span-price">3300 руб.</span></p>
@@ -127,8 +136,9 @@
 						<input type="text" placeholder="Электронная почта">
 					</div>
 					<div class="congrats-form-submit">
-						<label>
-							<input type="checkbox">
+						<label class="congrats-label">
+							<input type="checkbox" class="old-checkbox">
+							<span class="custom-checkbox"></span>
 							<span class="checkbox">Я согласен на обработку персональных данных</span>
 						</label>
 						<input type="submit" value="Заказать">
@@ -167,8 +177,10 @@
 							<input type="text" placeholder="Телефон">
 							<input type="submit" value="Заказать">
 						</div>
-						<label>
-							<input type="checkbox">
+						<label class="promo-label">
+							<input type="checkbox" class="old-checkbox">
+							<span class="custom-checkbox"></span>
+							<!--<i class="fa fa-check-square custom-checkbox" aria-hidden="true"></i>-->
 							<span>Я согласен на обработку персональных данных</span>
 						</label>
 					</form>
@@ -201,8 +213,9 @@
 							<input type="text" placeholder="Телефон">
 							<input type="submit" value="Заказать">
 						</div>
-						<label>
-							<input type="checkbox">
+						<label class="promo-label">
+							<input type="checkbox" class="old-checkbox">
+							<span class="custom-checkbox"></span>
 							<span>Я согласен на обработку персональных данных</span>
 						</label>
 					</form>
@@ -272,7 +285,10 @@
 				</section>
 			</nav>
 			<section class="disclaimer">
-				<p>Уважаемые посетители сайта www.sysevent.ru, информируем Вас о т</p>
+				<p>Уважаемые посетители сайта www.sysevent.ru, информируем Вас о том, что вся информация, представленная на 
+					нашем интернет ресурсе, а именно услуги, фотографии и цены, носит исключительно информационный <br>
+					характер и ни при каких условиях не является публичной офертой, определяемой положениями <br>
+					Ста тьи 437 (2) Гражданского кодекса РФ.</p>
 			</section>
 		</div>
 		<section class="footer-order">
@@ -281,15 +297,17 @@
 			<form class="footer-order-form">
 				<input type="text" placeholder="Имя">
 				<input type="text" placeholder="Телефон">
-				<label>
-					<input type="checkbox">
+				<label class="footer-label">
+					<input type="checkbox" class="old-checkbox">
+					<span class="custom-checkbox"></span>
 					<span>Я согласен на обработку персональных данных</span>
 				</label>
-				<input type="submit">
+				<input type="submit" value="Заказать">
 			</form>
 		</section>
 		<div class="clearfix"></div>
 	</div>
 </footer>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -17,21 +17,95 @@ header{
 .clearfix{
 	clear: both;
 }
+ul, ul li{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
 select{
 	font-family: 'Comfortaa', cursive;
 	font-size: 12px;
 }
 input::-webkit-input-placeholder{
 	font-family: 'Comfortaa', cursive;
-	font-size: 12px;
+	font-size: 18px;
 }
 input::-moz-placeholder{
 	font-family: 'Comfortaa', cursive;
-	font-size: 12px;
+	font-size: 18px;
 }
 input::-ms-input-placeholder{
 	font-family: 'Comfortaa', cursive;
-	font-size: 12px;
+	font-size: 18px;
+}
+label .old-checkbox{
+	display: none;
+}
+label .custom-checkbox{
+	position: relative;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	border-radius: 2px;
+	background-color: #b21d1d;
+}
+label .old-checkbox:checked + .custom-checkbox::before{
+	content: "";
+	display: block;
+	width: 10px;
+	height: 8px;
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	background-image: url("../img/icons/checkbox-icon.png");
+	background-repeat: no-repeat;
+}
+.custom-select{
+	position: relative;
+}
+.custom-select select{
+	display: none;
+}
+.select-selected{
+	background: DodgerBlue;
+}
+.select-selected::after{
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+}
+.select-selected.select-arrow-active::after{
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+}
+.select-items li, .select-selected{
+	color: #fff;
+	padding: 8px 16px;
+	border: 1px solid transparent;
+	border-color: transparent transparent rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+.select-items{
+	position: absolute;
+	background-color: DodgerBlue;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 99;
+}
+.select-hide{
+	display: none;
+}
+.select-items li:hover, .same-as-selected{
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 /***************************************************************************/
@@ -89,12 +163,15 @@ input::-ms-input-placeholder{
 }
 .page-navigation-form input::-webkit-input-placeholder{
 	font-style: italic;
+	font-size: 12px;
 }
 .page-navigation-form input::-moz-placeholder{
 	font-style: italic;
+	font-size: 12px;
 }
 .page-navigation-form input::-ms-input-placeholder{
 	font-style: italic;
+	font-size: 12px;
 }
 .page-navigation-form button{
 	height: 20px;
@@ -156,11 +233,14 @@ input::-ms-input-placeholder{
 	width: 23%;
 }
 .promo-callback p{
-	font-size: 25px;
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-size: 28px;
 	font-weight: bold;
 }
 .promo-callback button{
-	padding: 15px 10px;
+	width: 100%;
+	padding: 17.5px 10px;
     background-color: #b31d1d;
     border: none;
     outline: none;
@@ -241,19 +321,20 @@ input::-ms-input-placeholder{
 	content: "";
 	clear: both;
 }
+.congrats-form-top .custom-select:nth-child(2){
+	float: left;
+	width: 48.5%;
+}
+.congrats-form-top .custom-select:nth-child(3){
+	float: right;
+	width: 48.5%;
+}
 .congrats-form-top select{
+	width: 100%;
 	outline: none;
 	padding: 18px;
 	border-radius: 5px;
 	font-size: 18px;
-}
-.congrats-form-top select:nth-child(2){
-	float: left;
-	width: 48.5%;
-}
-.congrats-form-top select:nth-child(3){
-	float: right;
-	width: 48.5%;
 }
 .congrats-dashed-block{
 	margin-top: 30px;
@@ -298,7 +379,7 @@ input::-ms-input-placeholder{
     font-size: 18px;
 	background: #fdfbfb;
 }
-.congrats-form-bottom input::-webkit-input-placeholder{
+/*.congrats-form-bottom input::-webkit-input-placeholder{
 	font-size: 18px;
 }
 .congrats-form-bottom input::-moz-placeholder{
@@ -306,7 +387,7 @@ input::-ms-input-placeholder{
 }
 .congrats-form-bottom input::-ms-input-placeholder{
 	font-size: 18px;
-}
+}*/
 .congrats-form-bottom input:nth-child(2){
 	width: 94.2%;
 	margin-bottom: 10px;
@@ -344,6 +425,19 @@ input::-ms-input-placeholder{
     color: #fff;
 	font-family: 'Comfortaa';
 	font-size: 18px;
+}
+.congrats-label .custom-checkbox{
+	vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	border-radius: 3px;
+}
+.congrats-label .old-checkbox:checked + .custom-checkbox::before{
+	width: 16px;
+	height: 13px;
+	top: 7px;
+	left: 7px;
+	background-image: url("../img/icons/checkbox-icon-big.png");
 }
 .congrats-form-links{
 	margin-top: 20px;
@@ -445,7 +539,7 @@ input::-ms-input-placeholder{
     background: #fdfbfb;
 	vertical-align: middle;
 }
-.order-info input::-webkit-input-placeholder{
+/*.order-info input::-webkit-input-placeholder{
 	font-size: 18px;
 }
 .order-info input::-moz-placeholder{
@@ -453,7 +547,7 @@ input::-ms-input-placeholder{
 }
 .order-info input::-ms-input-placeholder{
 	font-size: 18px;
-}
+}*/
 .order-info input[type="submit"]{
     padding: 12px 50px;
 	border: none;
@@ -539,7 +633,7 @@ input::-ms-input-placeholder{
 }
 .footer-navigation{
 	float: left;
-	margin-right: 13.5%;
+	margin-right: 11.5%;
 }
 .footer-navigation-list{
 	padding: 0;
@@ -564,41 +658,60 @@ input::-ms-input-placeholder{
 	list-style: none;
 }
 .footer-bottom-left	.disclaimer{
+	width: 75%;
+	margin-top: 15px;
+	font-weight: 300;
 	font-size: 10px;
+	line-height: 14px;
 }
 .footer-order{
 	position: relative;
 	float: right;
-	width: 25%;
+	width: 23%;
 }
 .footer-order img{
 	position: absolute;
-	left: -100px;
+	left: -42%;
 	bottom: 0;
 	width: 100px;
 	height: auto;
 }
+.footer-order h3{
+	margin-top: 26.6px;
+	margin-bottom: 27px;
+}
 .footer-order input{
-	padding: 10px;
+	padding: 14px 10px;
     outline: none;
 }
+/*.footer-order input::-webkit-input-placeholder{
+	font-size: 18px;
+}
+.footer-order input::-moz-placeholder{
+	font-size: 18px;
+}
+.footer-order input::-ms-input-placeholder{
+	font-size: 18px;
+}*/
 .footer-order input[type="text"]{
 	width: 91%;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background: #fdfbfb;
 }
 .footer-order input[type="submit"]{
 	width: 100%;
+	padding: 12.5px 10px;
 	background: #b31d1d;
 	border: none;
 	border-radius: 5px;
     color: #fff;
     font-family: 'Comfortaa';
+	font-size: 18px;
 }
 .footer-order label{
 	display: block;
 	margin-bottom: 15px;
-	font-size: 8px;
+	font-size: 9px;
 }
