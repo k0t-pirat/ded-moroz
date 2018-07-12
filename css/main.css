@@ -69,9 +69,9 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .custom-select select{
 	display: none;
 }
-.select-selected{
+/*.select-selected{
 	background: DodgerBlue;
-}
+}*/
 .select-selected::after{
 	position: absolute;
 	content: "";
@@ -86,17 +86,27 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	border-color: transparent transparent #fff transparent;
 	top: 7px;
 }
-.select-items li, .select-selected{
-	color: #fff;
-	padding: 8px 16px;
-	border: 1px solid transparent;
-	border-color: transparent transparent rgba(0, 0, 0, 0.1);
-	cursor: pointer;
+.select-selected{
+	width: 88%;
+	padding: 18px;
+	outline: none;
+	border: 1px solid #aeaeae;
+	border-radius: 5px;
+	font-size: 18px;
+}
+.select-items li{
+	width: 88%;
+	padding: 6px 18px;
 }
 .select-items{
 	position: absolute;
-	background-color: DodgerBlue;
-	top: 100%;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #aeaeae;
+	background-color: #fff;
+	font-size: 18px;
+	top: 57px;
 	left: 0;
 	right: 0;
 	z-index: 99;
@@ -105,7 +115,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	display: none;
 }
 .select-items li:hover, .same-as-selected{
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: #fff6e3;
 }
 
 /***************************************************************************/
@@ -304,6 +314,9 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	background: #fff;
 	font-size: 24px;
 }
+.congrats-order .custom-select{
+	font-size: 18px;
+}
 .congrats-order form{
 	width: 77.5%;
 	margin: 0 auto;
@@ -379,15 +392,6 @@ label .old-checkbox:checked + .custom-checkbox::before{
     font-size: 18px;
 	background: #fdfbfb;
 }
-/*.congrats-form-bottom input::-webkit-input-placeholder{
-	font-size: 18px;
-}
-.congrats-form-bottom input::-moz-placeholder{
-	font-size: 18px;
-}
-.congrats-form-bottom input::-ms-input-placeholder{
-	font-size: 18px;
-}*/
 .congrats-form-bottom input:nth-child(2){
 	width: 94.2%;
 	margin-bottom: 10px;
@@ -539,15 +543,6 @@ label .old-checkbox:checked + .custom-checkbox::before{
     background: #fdfbfb;
 	vertical-align: middle;
 }
-/*.order-info input::-webkit-input-placeholder{
-	font-size: 18px;
-}
-.order-info input::-moz-placeholder{
-	font-size: 18px;
-}
-.order-info input::-ms-input-placeholder{
-	font-size: 18px;
-}*/
 .order-info input[type="submit"]{
     padding: 12px 50px;
 	border: none;
@@ -684,15 +679,6 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	padding: 14px 10px;
     outline: none;
 }
-/*.footer-order input::-webkit-input-placeholder{
-	font-size: 18px;
-}
-.footer-order input::-moz-placeholder{
-	font-size: 18px;
-}
-.footer-order input::-ms-input-placeholder{
-	font-size: 18px;
-}*/
 .footer-order input[type="text"]{
 	width: 91%;
 	margin-bottom: 20px;
