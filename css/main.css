@@ -75,28 +75,31 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .select-selected::after{
 	position: absolute;
 	content: "";
-	top: 14px;
-	right: 10px;
-	width: 0;
-	height: 0;
-	border: 6px solid transparent;
-	border-color: #fff transparent transparent transparent;
+	top: 22px;
+	right: 12px;
+	width: 20px;
+	height: 15px;
+	background-image: url("../img/icons/list-icon-down.svg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .select-selected.select-arrow-active::after{
-	border-color: transparent transparent #fff transparent;
-	top: 7px;
+	background-image: url("../img/icons/list-icon-up.svg");
 }
 .select-selected{
-	width: 88%;
+	width: 100%;
 	padding: 18px;
+	box-sizing: border-box;
 	outline: none;
 	border: 1px solid #aeaeae;
 	border-radius: 5px;
 	font-size: 18px;
 }
 .select-items li{
-	width: 88%;
+	width: 100%;
 	padding: 6px 18px;
+	box-sizing: border-box;
 }
 .select-items{
 	position: absolute;
@@ -104,6 +107,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	outline: none;
 	border-radius: 5px;
 	border: 1px solid #aeaeae;
+	box-sizing: border-box;
 	background-color: #fff;
 	font-size: 18px;
 	top: 57px;
