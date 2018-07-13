@@ -6,6 +6,9 @@ body{
 	padding: 0;
 	font-family: 'Comfortaa', cursive;
 }
+html{
+	font-size: 18px;
+}
 header{
 	margin: 0;
 	padding: 0;
@@ -261,6 +264,63 @@ label .old-checkbox:checked + .custom-checkbox::before{
     border-radius: 5px;
     color: #fff;
     font-family: 'Comfortaa';
+}
+.promo-videos li{
+	margin-top: 20px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.promo-videos .video-wrapper{
+	position: relative;
+	line-height: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.video-wrapper .image-holder{
+	/*position: absolute;*/
+	width: 100%;
+	height: 100%;
+}
+.video-wrapper .video-image{
+	width: 100%;
+}
+.video-wrapper .play-button{
+	position: absolute;
+    top: 35px;
+    left: 92px;
+}
+.video-wrapper .play-signature{
+	display: none;
+	position: absolute;
+	top: 120px;
+	left: 55px;
+	color: #fff;
+}
+.video-wrapper:hover{
+	cursor: pointer;
+}
+.video-wrapper:hover .play-signature{
+	display: block;
+}
+.promo-videos .video-title{
+	margin-top: 10px;
+}
+.promo-videos .video-stats{
+	margin-top: 10px;
+	text-align: justify;
+	-moz-text-align-last: justify;
+	text-align-last: justify;
+}
+.promo-videos span{
+	display: inline-block;
+}
+.promo-videos .video-new{
+	font-style: italic;
+	color: #b82b2a;
+}
+.promo-videos .video-likes{
+	position: relative;
+    right: 10%;
 }
 .main-content{
 	float: right;
@@ -560,6 +620,23 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	font-size: 12px;
     font-style: italic;
     color: #969696;
+}
+.feedback{
+	margin-bottom: 50px;
+}
+.feedback h2{
+	text-align: center;
+	font-size: 48px;
+}
+.feedback-container{
+	width: 100%;
+	height: 510px;
+	background-color: #fff;
+}
+.feedback-img{
+	position: relative;
+    top: 10px;
+    left: 10px;
 }
 
 /****************************************************************************/
