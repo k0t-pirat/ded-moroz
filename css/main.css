@@ -545,6 +545,33 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	width: 100%;
 	border-radius: 5px;
 }
+.actors-list .empty-img{
+	position: relative;
+}
+.actors-list .empty-img::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 87%;
+	border: 1px dashed #b31d1d;
+	border-radius: 10px;
+}
+.actors-list .empty-img::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background-image: url("../img/icons/plus.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 15%;
+	height: 15%;
+}
 .costumes h2{
 	text-align: center;
 	font-size: 2.4rem;
