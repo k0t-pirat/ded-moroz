@@ -14,7 +14,8 @@ header{
 	padding: 0;
 }
 .container{
-	width: 60%;
+	/*width: 60%;*/
+	width: 1170px;
 	margin: 0 auto;
 }
 .clearfix{
@@ -124,10 +125,49 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .select-items li:hover, .same-as-selected{
 	background-color: #fff6e3;
 }
+.item-wrapper{
+	position: relative;
+	display: block;
+}
+.item-wrapper:hover{
+	cursor: pointer;
+}
+.item-wrapper:hover .hover-icon,
+.item-wrapper:hover .hover-background,
+.item-wrapper:hover .hover-info{
+	display: block;
+}
+.item-wrapper .hover-icon{
+	/*display: none;*/
+	position: absolute;
+    top: 34.5%;
+    left: 40.5%;
+    width: 19%;
+}
+.item-wrapper .hover-background{
+	/*display: none;*/
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.2);
+}
+.item-wrapper .hover-info{
+	/*display: none;*/
+	position: absolute;
+	top: 149px;
+	width: 100%;
+	text-align: center;
+}
 
 /***************************************************************************/
 /***************************стили для header********************************/
 
+.header-background img{
+	width: 100%;
+}
 .main-header{
 	background: #b31d1d;
 }
@@ -238,9 +278,33 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .top-links-list li:last-child{
 	margin-right: -5px;
 }
+/*.top-links-list .item-wrapper{
+	position: relative;
+	display: block;
+}
+.top-links-list .item-wrapper:hover{
+	cursor: pointer;
+}
+.top-links-list .item-wrapper:hover .hover-icon,
+.top-links-list .item-wrapper:hover .hover-background{
+	display: block;
+}*/
 .top-links-list img{
 	width: 100%;
 }
+.top-links-list .hover-icon{
+    top: 34.5%;
+}
+/*.top-links-list .hover-background{
+	display: none;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.2);
+}*/
 .top-links-list a{
 	color: #474747;
 	font-size: 0.8rem;
@@ -264,6 +328,9 @@ label .old-checkbox:checked + .custom-checkbox::before{
     border-radius: 5px;
     color: #fff;
     font-family: 'Comfortaa';
+}
+.promo-callback button:hover{
+	cursor: pointer;
 }
 .promo-videos li{
 	margin-top: 20px;
@@ -370,6 +437,17 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	font-size: 0.75rem;
 	color: #fff;
 	text-decoration: none;
+}
+.top-order-list li:nth-child(1) .top-order-list-description a:hover{
+	background-color: #fff;
+	color: #b31d1d;
+}
+.top-order-list li:nth-child(2) .top-order-list-description a:hover{
+	background-color: #fff;
+	color: #105802;
+}.top-order-list li:nth-child(3) .top-order-list-description a:hover{
+	background-color: #fff;
+	color: #b31d1d;
 }
 .congrats-order{
 	margin-bottom: 70px;
@@ -544,6 +622,24 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .actors-list img{
 	width: 100%;
 	border-radius: 5px;
+}
+.actors-list .hover-icon{
+    top: 33%;
+}
+.actors-list .actor-info{
+}
+.actors-list .actor-name,
+.actors-list .actor-description{
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.actors-list .actor-name{
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+}
+.actors-list .actor-description{
+	font-size: 0.7rem;
 }
 .actors-list .empty-img{
 	position: relative;
@@ -734,6 +830,10 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .footer-links h4{
 	font-size: 1rem;
 }
+.footer-links a{
+	color: #fff;
+	text-decoration: none;
+}
 .footer-navigation{
 	float: left;
 	margin-right: 11.5%;
@@ -762,7 +862,8 @@ label .old-checkbox:checked + .custom-checkbox::before{
 }
 .footer-bottom-left	.disclaimer{
 	width: 75%;
-	margin-top: 15px;
+	margin-top: 50px;
+	margin-bottom: 20px;
 	font-weight: 300;
 	font-size: 0.5rem;
 	line-height: 14px;
@@ -808,6 +909,19 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	display: block;
 	margin-bottom: 15px;
 	font-size: 0.45rem;
+}
+
+/****************************************************************************/
+/*******************************стили для actors-popup*******************************/
+.popup-container{
+	display: none;
+	position: relative;
+}
+.actors-popup{
+	position: fixed;
+	top: 10%;
+	width: 1140px;
+	background-color: #fff6e3;
 }
 
 @media screen and (max-width: 800px) {
