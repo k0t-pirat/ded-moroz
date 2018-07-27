@@ -315,7 +315,7 @@
 				<ul class="actors-list">
 					<li>
 						<a href="#" target="_blank" class="item-wrapper">
-							<img src="img/actors/actor-1.jpg" alt="Здесь будет картинка c актёром" width="260">
+							<img src="img/actors/actor-1.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
 							<span class="hover-background"></span>
 							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
 							<div class="hover-info">
@@ -326,7 +326,7 @@
 					</li>
 					<li>
 						<a href="#" target="_blank" class="item-wrapper">
-							<img src="img/actors/actor-2.jpg" alt="Здесь будет картинка c актёром" width="260">
+							<img src="img/actors/actor-2.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
 							<span class="hover-background"></span>
 							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
 							<div class="hover-info">
@@ -337,7 +337,7 @@
 					</li>
 					<li>
 						<a href="#" target="_blank" class="item-wrapper">
-							<img src="img/actors/actor-3.jpg" alt="Здесь будет картинка c актёром" width="260">
+							<img src="img/actors/actor-3.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
 							<span class="hover-background"></span>
 							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
 							<div class="hover-info">
@@ -348,7 +348,7 @@
 					</li>
 					<li>
 						<a href="#" target="_blank" class="item-wrapper">
-							<img src="img/actors/actor-4.jpg" alt="Здесь будет картинка c актёром" width="260">
+							<img src="img/actors/actor-4.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
 							<span class="hover-background"></span>
 							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
 							<div class="hover-info">
@@ -359,7 +359,7 @@
 					</li>
 					<li>
 						<a href="#" target="_blank" class="item-wrapper">
-							<img src="img/actors/actor-5.jpg" alt="Здесь будет картинка c актёром" width="260">
+							<img src="img/actors/actor-5.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
 							<span class="hover-background"></span>
 							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
 							<div class="hover-info">
@@ -370,7 +370,7 @@
 					</li>
 					<li>
 						<a href="#" target="_blank" class="item-wrapper">
-							<img src="img/actors/actor-6.jpg" alt="Здесь будет картинка c актёром" width="260">
+							<img src="img/actors/actor-6.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
 							<span class="hover-background"></span>
 							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
 							<div class="hover-info">
@@ -381,7 +381,7 @@
 					</li>
 					<li>
 						<a href="#" target="_blank" class="item-wrapper">
-							<img src="img/actors/actor-7.jpg" alt="Здесь будет картинка c актёром" width="260">
+							<img src="img/actors/actor-7.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
 							<span class="hover-background"></span>
 							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
 							<div class="hover-info">
@@ -392,7 +392,7 @@
 					</li>
 					<li>
 						<a href="#" target="_blank" class="item-wrapper">
-							<img src="img/actors/actor-8.jpg" alt="Здесь будет картинка c актёром" width="260">
+							<img src="img/actors/actor-8.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
 							<span class="hover-background"></span>
 							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
 							<div class="hover-info">
@@ -401,8 +401,10 @@
 							</div>
 						</a>
 					</li>
-					<li>
-						<img src="img/actors/actor-0.jpg" alt="Здесь будет картинка c актёром" width="260">
+					<li class="image-add-item">
+						<img src="img/actors/actor-0.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">
+						<div class="image-add-border"></div>
+						<img src="img/icons/plus.png" class="image-add-plus">
 					</li>
 				</ul>
 			</section>
@@ -552,20 +554,24 @@
 		<div class="clearfix"></div>
 	</div>
 </footer>
+<div class="popup-layer"></div>
 <div class="container popup-container">
 	<div class="actors-popup">
+		<div class="actors-popup-close">
+			<img src="img/icons/cross.png">
+		</div>
 		<div class="popup-wrapper">
 			<nav>
 				<ul class="popup-navigation-list">
-					<li class="popup-navigation-item">Предыдущая страница</li>
-					<li class="popup-navigation-item">Дед Мороз и Снегурочка</li>
-					<li class="popup-navigation-item">Следующая страница</li>
+					<li class="popup-navigation-item"><a href="#previous">Предыдущая страница</a></li>
+					<li class="popup-navigation-item popup-title-item">Дед Мороз и Снегурочка</li>
+					<li class="popup-navigation-item"><a href="#next">Следующая страница</a></li>
 				</ul>
 			</nav>
 			<section class="popup-actors-about">
 				<div class="popup-one-actor-about">
 					<div class="popup-actor-image-holder">
-						<img src="" alt="Картинка с актёром">
+						<img src="img/actors/actor-8.jpg" alt="Картинка с актёром">
 					</div>
 					<div class="popup-actor-info">
 						<h3 class="popup-actor-name">Илья</h3>
@@ -574,10 +580,16 @@
 							Дедом Морозом работает уже 21 год, что доставляет ему колоссальное удовольствие. 
 							Любит работать с детьми и дарить им подарки. Самая лучшая для него награда – радостные улыбки детей и их родителей..</p>
 					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="popup-actor-couple">
+					<p class="popup-couple-with">В паре с:</p>
+					<div class="popup-actor-border"></div>
+					<div class="clearfix"></div>
 				</div>
 				<div class="popup-one-actor-about">
 					<div class="popup-actor-image-holder">
-						<img src="" alt="Картинка с актёром">
+						<img src="img/actors/actor-2.jpg" alt="Картинка с актёром">
 					</div>
 					<div class="popup-actor-info">
 						<h3 class="popup-actor-name">Ольга</h3>
@@ -586,6 +598,7 @@
 							С легкостью находит общий язык с детьми, очень любит приносить им счастье своим появлением. 
 							Мечтает выйти замуж и быть Снегурочкой для своих собственных детей.</p>
 					</div>
+					<div class="clearfix"></div>
 				</div>
 			</section>
 			<article class="order-promo">
@@ -609,9 +622,30 @@
 				</div>
 				<div class="clearfix"></div>
 			</article>
+			<section class="popup-promo">
+				<div class="popup-promo-image">
+					<ul class="popup-promo-image-list">
+						<li class="popup-promo-image-item"><img src="img/costumes/costume-11-1.png" alt="Картинка с актёрами в костюмах"></li>
+						<li class="popup-promo-image-item"><img src="img/costumes/costume-14.png" alt="Картинка с актёрами в костюмах"></li>
+						<li class="popup-promo-image-item"><img src="img/costumes/costume-18.png" alt="Картинка с актёрами в костюмах"></li>
+						<li class="popup-promo-image-item popup-promo-image-add-item">
+							<img src="img/costumes/white-background.png" alt="Добавление картинки с актёрами в костюмах">
+							<div class="popup-promo-image-add-border"></div>
+							<img src="img/icons/plus.png" class="popup-promo-image-add-plus">
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="popup-promo-video">
+					<img src="img/video-promo.jpg">
+					<p><a href="#">Смотреть другие видео</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</section>
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src="js/select-box.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
