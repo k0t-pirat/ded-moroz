@@ -32,6 +32,10 @@ select{
 	font-family: 'Comfortaa', cursive;
 	font-size: 0.6rem;
 }
+input{
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 0.9rem;
+}
 input::-webkit-input-placeholder{
 	font-family: 'Comfortaa', cursive;
 	font-size: 0.9rem;
@@ -129,6 +133,9 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	position: relative;
 	display: block;
 }
+.item-wrapper > img{
+	display: block;
+}
 .item-wrapper:hover{
 	cursor: pointer;
 }
@@ -150,9 +157,9 @@ label .old-checkbox:checked + .custom-checkbox::before{
     top: 0;
     left: 0;
     width: 100%;
-    height: 98%;
+    height: 100%;
     border-radius: 3px;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.5);
 }
 .item-wrapper .hover-info{
 	display: none;
@@ -181,6 +188,13 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	top: 37%;
 	left: 35%;
 	width: 28%;
+}
+.image-add-more{
+	position: absolute;
+    left: 23%;
+    bottom: 15%;
+    font-size: 18px;
+    color: #b31d1d;
 }
 
 /***************************************************************************/
@@ -238,6 +252,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	border-radius: 5px;
 	border: none;
 	outline: none;
+	font-size: 0.6rem;
 }
 .page-navigation-form input::-webkit-input-placeholder{
 	font-style: italic;
@@ -384,14 +399,31 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	left: 55px;
 	color: #fff;
 }
+.video-wrapper .hover-background{
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: rgba(0,0,0,0.5);
+}
 .video-wrapper:hover{
 	cursor: pointer;
 }
 .video-wrapper:hover .play-signature{
 	display: block;
 }
+.video-wrapper:hover .hover-background{
+	display: block;
+}
 .promo-videos .video-title{
+	display: block;
 	margin-top: 10px;
+}
+.promo-videos .video-title:hover{
+	cursor: pointer;
 }
 .promo-videos .video-stats{
 	margin-top: 10px;
@@ -444,7 +476,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 }
 .top-order-list-description{
 	position: relative;
-	bottom: 7.5em;
+	bottom: 7em;
 	text-align: center;
 }
 .top-order-list-description p{
@@ -519,7 +551,8 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	border-radius: 5px;
 }
 .congrats-dashed-block p{
-	text-align: center;
+	/*text-align: center;*/
+	margin-left: 13%;
 }
 .congrats-dashed-block p:nth-child(1){
 	margin-bottom: 18px;
@@ -597,7 +630,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	vertical-align: middle;
 	width: 28px;
 	height: 28px;
-	border-radius: 3px;
+	border-radius: 5px;
 }
 .congrats-label .old-checkbox:checked + .custom-checkbox::before{
 	width: 16px;
@@ -662,6 +695,11 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .actors-list .actor-description{
 	font-size: 0.7rem;
 }
+.actors-list .image-add-plus{
+	top: 40%;
+    left: 40%;
+    width: 18%;
+}
 .actors-list .empty-img{
 	position: relative;
 }
@@ -708,9 +746,47 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .costumes-list li:nth-child(3n){
 	margin-right: -5px;
 }
-.costumes-list img{
+.costumes-list .costume-img{
 	width: 100%;
 	border-radius: 5px;
+}
+.costumes-list .hover-icon{
+	top: 43.5%;
+}
+.costumes-list .hover-info{
+	top: 0;
+	height: 100%;
+	text-align: center;
+}
+.costumes-list .hover-item{
+	position: relative;
+	display: block;
+	color: #fff;
+	font-size: 16px;
+}
+.costumes-list .costume-price{
+	top: 26px;
+	font-style: italic;
+}
+.costumes-list .costume-name{
+	top: 240px;
+	font-style: italic;
+	font-size: 15px;
+}
+.costumes-list .costume-order{
+    top: 270px;
+}
+.costumes-list .costume-order span{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.costumes-list .image-add-plus{
+	top: 40%;
+    left: 40%;
+    width: 18%;
 }
 .order-promo{
 	margin-top: 10px;
@@ -744,12 +820,15 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	text-align-last: justify;
 }
 .order-info input{
-    padding: 14px 24px;
+    padding: 12px 24px;
 	outline: none;
     border: 1px solid #ccc;
     border-radius: 5px;
     background: #fdfbfb;
 	vertical-align: middle;
+}
+.order-info input[type="text"]{
+	width: 25%;
 }
 .order-info input[type="submit"]{
     padding: 12px 50px;
@@ -944,10 +1023,11 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	opacity: 0.5;
 }
 .popup-container{
-	display: none;
+	/*display: none;*/
 	position: relative;
 }
 .actors-popup{
+	display: none;
 	position: fixed;
 	top: 5%;
 	width: 1140px;
@@ -1105,6 +1185,15 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .popup-promo .popup-promo-video a{
 	color: #11100f;
 	font-size: 1.1rem;
+}
+.video-popup{
+	display: none;
+	background: white;
+	position: fixed;
+	width: 533px;
+	height: 300px;
+	top: 10%;
+	left: 40%;
 }
 .show-popup{
 	display: block;
