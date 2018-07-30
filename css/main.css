@@ -25,6 +25,12 @@ header{
 .clearfix{
 	clear: both;
 }
+.show-element{
+	display: block;
+}
+.hide-element{
+	display: none;
+}
 ul, ul li{
 	margin: 0;
 	padding: 0;
@@ -1280,6 +1286,29 @@ footer .order-promo{
 	.footer-bottom-left .disclaimer{
 		float: none;
 		margin-top: 15px;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 750px) {
+	.container{
+		width: 480px;
+	}
+	.congrats-form-bottom input:nth-child(3){
+		float: none;
+		width: 94%;
+		margin-bottom: 20px;
+	}
+	.congrats-form-bottom input:nth-child(4){
+		float: none;
+		width: 94%;
+	}
+	.congrats-form-top .custom-select:nth-child(2){
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.congrats-form-top .custom-select:nth-child(3){
+		float: none;
 		width: 100%;
 	}
 }
