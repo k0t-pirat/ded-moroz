@@ -62,7 +62,7 @@ for (var i = 0; i < imageAddItem.length; i++) {
 function addImageBefore(addImageItem) {
 	var newImage = document.createElement('li');
 	var imageSwitch = addImageItem.parentNode.className;
-	newImage.innerHTML = newImageHTML(imageSwitch);
+	newImage.innerHTML = getNewImage(imageSwitch);
 	
 	var addedImage = addImageItem.parentNode.insertBefore(newImage, addImageItem);
 	addedImage.addEventListener('click', function(evt){
@@ -70,7 +70,7 @@ function addImageBefore(addImageItem) {
 	});
 }
 
-function newImageHTML(imageSwitch) {
+function getNewImage(imageSwitch) {
 	if (imageSwitch === 'actors-list') {
 		var imageFolder = "actors/actor-";
 		var hoverInfo = '<span class="actor-name">Илья</span>'+

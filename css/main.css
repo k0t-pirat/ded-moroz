@@ -13,6 +13,10 @@ header{
 	margin: 0;
 	padding: 0;
 }
+.main-background{
+	background-color: #fff6e3;
+	padding-top: 20px;
+}
 .container{
 	/*width: 60%;*/
 	width: 1170px;
@@ -288,8 +292,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 /*******************************стили для main*******************************/
 
 .index-page{
-	background: #fff6e3;
-	padding-top: 20px;
+	
 }
 .top-links{
 	
@@ -307,12 +310,15 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .top-links-list li{
 	display: inline-block;
 	vertical-align: top;
-	width: 23%;
-	margin-right: 2.25%;
+	width: 31.08%;
+	margin-right: 3.466%;
 	margin-bottom: 50px;
 }
 .top-links-list li:last-child{
 	margin-right: -5px;
+}
+.top-links-list .aside-link{
+	width: 100%;
 }
 /*.top-links-list .item-wrapper{
 	position: relative;
