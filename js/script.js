@@ -42,7 +42,7 @@ for (var i = 0; i < showVideo.length; i++) {
 }
 popupLayer.addEventListener('click', function(){
 	popupActor.classList.remove('show-popup');
-	//popupVideo.classList.remove('show-popup');
+	popupVideo.classList.remove('show-popup');
 	popupLayer.classList.remove('show-popup');
 });
 popupClose.addEventListener('click', function(){
@@ -75,16 +75,18 @@ function getNewImage(imageSwitch) {
 		var imageFolder = "actors/actor-";
 		var hoverInfo = '<span class="actor-name">Илья</span>'+
 						'<span class="actor-description">45 лет<br>Выпускник ВГТУ им. Щукина</span>';
+		var imageClass = 'actors-';
 	}
 	else if (imageSwitch === 'costumes-list') {
 		var imageFolder = "costumes/costume-";
 		var hoverInfo = '<span class="hover-item costume-price">от 3300 руб.</span>'+
 						'<span class="hover-item costume-name">Модель <br>"Боярский сине-серебристый"</span>'+
 						'<span class="hover-item costume-order"><span>Заказать</span></span>';
+		var imageClass = 'costume-';
 	}
 	
 	return '<a href="#" target="_blank" class="item-wrapper">'+
-				'<img src="img/' + imageFolder + imageNumber + '.jpg" alt="Здесь будет картинка c актёром" width="260" class="actors-img">'+
+				'<img src="img/' + imageFolder + imageNumber + '.jpg" alt="Здесь будет картинка c актёром" class="' + imageClass + 'img">'+
 				'<span class="hover-background"></span>'+
 				'<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">'+
 				'<div class="hover-info">'+
