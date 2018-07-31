@@ -1292,15 +1292,47 @@ footer .order-promo{
 @media screen and (max-width: 750px) {
 	.container{
 		width: 480px;
+		overflow: hidden;
+	}
+	.order-promo,
+	.actors-list .image-add-item,
+	.costumes-list .image-add-item{
+		display: none;
+	}
+	.top-links{
+		width: 180%;
+	}
+	.top-links-list{
+		position: relative;
+		left: -21%;
+	}
+	.top-links-list li{
+		width: 262px;
+	}
+	.top-order{
+		width: 180%;
+	}
+	.top-order-list{
+		position: relative;
+		left: -21%;
+	}
+	.top-order-list li{
+		width: 262px;
+	}
+	.congrats-order form{
+		width: 87.5%;
+	}
+	.congrats-form-bottom input:nth-child(2){
+		width: 91.1%;
 	}
 	.congrats-form-bottom input:nth-child(3){
 		float: none;
-		width: 94%;
+		width: 91%;
 		margin-bottom: 20px;
 	}
 	.congrats-form-bottom input:nth-child(4){
 		float: none;
-		width: 94%;
+		width: 91%;
 	}
 	.congrats-form-top .custom-select:nth-child(2){
 		float: none;
@@ -1310,5 +1342,71 @@ footer .order-promo{
 	.congrats-form-top .custom-select:nth-child(3){
 		float: none;
 		width: 100%;
+	}
+	.congrats-dashed-block p{
+		margin-left: 2%;
+	}
+	.congrats-dashed-block p:nth-child(1){
+		margin-top: 5px;
+		margin-bottom: 10px;
+		font-size: 1rem;
+	}
+	.congrats-dashed-block p:nth-child(2){
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font-size: 0.75rem;
+	}
+	.congrats-dashed-block .span-price-title{
+		font-size: 0.9rem;
+	}
+	.congrats-label span{
+		display: inline-block;
+	}
+	.congrats-form-submit label{
+		width: 50%;
+	}
+	.congrats-form-submit span.checkbox{
+		width: 80%;
+	}
+	.congrats-form-submit input[type="submit"]{
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	.congrats-form-links a:nth-child(2){
+		display: none;
+	}
+	.actors{
+		width: 480%;
+	}
+	.actors h2{
+		width: 21%;
+	}
+	.actors-list{
+		position: relative;
+		left: -45%;
+	}
+	.actors-list li{
+		width: 262px;
+		margin-right: 1%;
+	}
+	.actors-list li:nth-child(3n){
+		margin-right: 1%;
+	}
+	.costumes{
+		width: 480%;
+	}
+	.costumes h2{
+		width: 21%;
+	}
+	.costumes-list{
+		position: relative;
+		left: -45%;
+	}
+	.costumes-list li{
+		width: 262px;
+		margin-right: 1%;
+	}
+	.costumes-list li:nth-child(3n){
+		margin-right: 1%;
 	}
 }
