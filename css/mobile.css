@@ -1,0 +1,325 @@
+/***************************************************************************/
+/*****************************общие стили***********************************/
+
+/****************************************************************************/
+/*******************************стили для main*******************************/
+
+
+@media screen and (max-width: 1170px) {
+	.order-promo .promo-image,
+	.feedback,
+	.promo .top-links,
+	.promo .promo-callback,
+	.footer-order,
+	.footer-links{
+		display: none;
+	}
+	.main-content{
+		float: none; 
+		width: 100%;
+	}
+	.container{
+		width: 750px;
+	}
+	.order-promo .order-info{
+		float: none;
+		width: 100%;
+	}
+	.congrats-form-submit input[type="submit"]{
+		padding-left: 58px;
+		padding-right: 58px;
+	}
+	.congrats-form-links a{
+		margin-right: 6.8%;
+	}
+	.promo {
+		float: none;
+		width: 750px;
+		margin-bottom: -35px;
+	}
+	.promo-videos{
+		padding-bottom: 50px;
+	}
+	.promo-videos li{
+		display: inline-block;
+		width: 30.955%;
+		margin-right: 3.55%;
+	}
+	.promo-videos li:nth-child(3n){
+		margin-right: -6px;
+	}
+	.footer-top{
+		margin-bottom: 30px;
+	}
+	.footer-phone{
+		width: 50%;
+	}
+	.footer-phone .footer-phone-order{
+		display: none;
+	}
+	footer .order-promo{
+		display: block;
+		margin-bottom: 0;
+	}
+	footer .order-info h3{
+		color: #fff;
+	}
+	.social-list li{
+		width: 40px;
+		height: 40px;
+		margin-left: 17px;
+	}
+	.footer-bottom-left{
+		width: 100%;
+	}
+	.footer-bottom-left .disclaimer{
+		float: none;
+		margin-top: 15px;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 750px) {
+	.container{
+		width: 480px;
+		overflow: hidden;
+	}
+	.order-promo,
+	.actors-list .image-add-item,
+	.costumes-list .image-add-item{
+		display: none;
+	}
+	.mobile-plus{
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 350px;
+		height: 70px;
+		background: #fff;
+		border-radius: 5px;
+	}
+	.mobile-plus .image-add-border{
+		top: 15.5%;
+		left: 3.5%;
+		width: 92%;
+		height: 70%;
+	}
+	.mobile-plus img{
+		top: 36%;
+		left: 10%;
+		width: 6%;
+	}
+	.mobile-plus .image-add-more{
+		left: 18%;
+		bottom: 33%;
+	}
+	.mobile-slide-list li{
+		width: 350px;
+		vertical-align: middle;
+	}
+	.mobile-slide-list li:not(.css-image-main){
+		width: 262.5px;
+	}
+	.top-links{
+		width: 200%;
+	}
+	.top-links-list{
+		position: relative;
+		left: -24%;
+	}
+	.top-links-list li{
+		/*width: 262px;*/
+	}
+	.top-links-list li:not(.css-image-main){
+		position: relative;
+		/*top: 23px;*/
+		/*vertical-align: top;*/
+		/*width: 186.5px;*/
+	}
+	.top-order{
+		width: 200%;
+	}
+	.top-order-list{
+		position: relative;
+		left: -24%;
+	}
+	.top-order-list li{
+		/*width: 262px;*/
+		/*vertical-align: middle;*/
+	}
+	.top-order-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
+	.congrats-order form{
+		width: 87.5%;
+	}
+	.congrats-form-bottom input:nth-child(2){
+		width: 91.1%;
+	}
+	.congrats-form-bottom input:nth-child(3){
+		float: none;
+		width: 91%;
+		margin-bottom: 20px;
+	}
+	.congrats-form-bottom input:nth-child(4){
+		float: none;
+		width: 91%;
+	}
+	.congrats-form-top .custom-select:nth-child(2){
+		float: none;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.congrats-form-top .custom-select:nth-child(3){
+		float: none;
+		width: 100%;
+	}
+	.congrats-dashed-block p{
+		margin-left: 2%;
+	}
+	.congrats-dashed-block p:nth-child(1){
+		margin-top: 5px;
+		margin-bottom: 10px;
+		font-size: 1rem;
+	}
+	.congrats-dashed-block p:nth-child(2){
+		margin-top: 10px;
+		margin-bottom: 5px;
+		font-size: 0.75rem;
+	}
+	.congrats-dashed-block .span-price-title{
+		font-size: 0.9rem;
+	}
+	.congrats-label span{
+		display: inline-block;
+	}
+	.congrats-form-submit label{
+		width: 50%;
+	}
+	.congrats-form-submit span.checkbox{
+		width: 80%;
+	}
+	.congrats-form-submit input[type="submit"]{
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+	.congrats-form-links a:nth-child(2){
+		display: none;
+	}
+	.actors{
+		width: 500%;
+	}
+	.actors h2{
+		width: 21%;
+	}
+	.actors-list{
+		position: relative;
+		left: -45%;
+	}
+	.actors-list li{
+		/*width: 262px;*/
+		margin-right: 1%;
+		/*vertical-align: middle;*/
+		margin-bottom: 1.25%;
+	}
+	.actors-list li:nth-child(3n){
+		margin-right: 1%;
+	}
+	.actors-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
+	.costumes{
+		width: 500%;
+	}
+	.costumes h2{
+		width: 21%;
+	}
+	.costumes-list{
+		position: relative;
+		left: -45%;
+	}
+	.costumes-list li{
+		/*width: 262px;*/
+		margin-right: 1%;
+		margin-bottom: 1.25%;
+		/*vertical-align: middle;*/
+	}
+	.costumes-list li:nth-child(3n){
+		margin-right: 1%;
+	}
+	.costumes-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
+	.promo{
+		margin-top: 30px;
+	}
+	.promo-videos{
+		width: 480%;
+	}
+	.videos-list{
+		position: relative;
+		left: -29.85%;
+	}
+	.videos-list li{
+		/*position: relative;*/
+		/*width: 262px;*/
+		margin-right: 23px;
+		/*vertical-align: middle;*/
+	}
+	.videos-list li:nth-child(3n){
+		margin-right: 23px;
+	}
+	.videos-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
+	.footer-phone{
+		float: none;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.footer-phone div:first-child{
+		font-size: 2.6rem;
+	}
+	.footer-social{
+		float: none;
+		width: 100%;
+	}
+	.social-list{
+		float: none;
+	}
+	.social-list li{
+		width: 50px;
+		height: 50px;
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	.social-list li:last-child{
+		margin-right: 0;
+	}
+	footer .order-promo {
+		display: none;
+	}
+	.order-promo-mobile{
+		display: block;
+	}
+	.order-promo-mobile .order-info{
+		float: none;
+		width: 100%;
+	}
+	.order-promo-mobile input[type="text"]{
+		box-sizing: border-box;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.order-promo-mobile .promo-label{
+		margin-bottom: 20px;
+	}
+	.order-promo-mobile input[type="submit"]{
+		width: 100%;
+		padding: 12px 190px;
+	}
+}
+@media screen and (max-width: 480px) {
+	/*.container{
+		width: 100%;
+	}*/
+}

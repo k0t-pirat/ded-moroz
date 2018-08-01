@@ -1,0 +1,541 @@
+/***************************************************************************/
+/*****************************общие стили***********************************/
+
+/****************************************************************************/
+/*******************************стили для main*******************************/
+
+.index-page{
+	
+}
+
+
+.top-order-list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.top-order-list::after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.top-order-list li{
+	display: inline-block;
+	vertical-align: top;
+	width: 30.955%;
+	margin-right: 3.55%;
+	margin-bottom: 0;
+}
+.top-order-list li:last-child{
+	margin-right: -5px;
+}
+.top-order-list img{
+	width: 100%;
+}
+.top-order-list-description{
+	position: relative;
+	bottom: 7em;
+	text-align: center;
+}
+.top-order-list-description p{
+	font-size: 18px;
+	color: #fff;
+}
+.top-order-list-description a{
+	padding: 5px 15px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	font-size: 0.75rem;
+	color: #fff;
+	text-decoration: none;
+}
+.top-order-list li:nth-child(1) .top-order-list-description a:hover{
+	background-color: #fff;
+	color: #b31d1d;
+}
+.top-order-list li:nth-child(2) .top-order-list-description a:hover{
+	background-color: #fff;
+	color: #105802;
+}.top-order-list li:nth-child(3) .top-order-list-description a:hover{
+	background-color: #fff;
+	color: #b31d1d;
+}
+.congrats-order{
+	margin-bottom: 70px;
+	padding-top: 45px;
+	padding-bottom: 15px;
+	background: #fff;
+	font-size: 1.2rem;
+}
+.congrats-order .custom-select{
+	font-size: 0.9rem;
+}
+.congrats-order form{
+	width: 77.5%;
+	margin: 0 auto;
+}
+.congrats-order h3{
+	margin-top: 0;
+	margin-bottom: 10px;
+	font-size: 1.1rem;
+}
+.congrats-order a{
+	color: #585858;
+}
+.congrats-form-top::after{
+	display: table;
+	content: "";
+	clear: both;
+}
+.congrats-form-top .custom-select:nth-child(2){
+	float: left;
+	width: 48.5%;
+}
+.congrats-form-top .custom-select:nth-child(3){
+	float: right;
+	width: 48.5%;
+}
+.congrats-form-top select{
+	width: 100%;
+	outline: none;
+	padding: 18px;
+	border-radius: 5px;
+	font-size: 0.9rem;
+}
+.congrats-dashed-block{
+	margin-top: 30px;
+	margin-bottom: 25px;
+	border: 2px dashed #b31d1d;
+	border-radius: 5px;
+}
+.congrats-dashed-block p{
+	/*text-align: center;*/
+	margin-left: 13%;
+}
+.congrats-dashed-block p:nth-child(1){
+	margin-bottom: 18px;
+}
+.congrats-dashed-block p:nth-child(2){
+	margin-top: 18px;
+	font-size: 0.9rem;
+}
+.congrats-dashed-block .span-underline{
+	text-decoration: underline;
+}
+.congrats-dashed-block .span-price{
+	font-weight: bold;
+	color: #b31d1d;
+}
+.congrats-dashed-block .span-price-title{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.congrats-form-bottom{
+	margin-bottom: 20px;
+}
+.congrats-form-bottom::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.congrats-form-bottom input{
+	outline: none;
+	border: 1px solid #ccc;
+    padding: 18px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+	background: #fdfbfb;
+}
+.congrats-form-bottom input:nth-child(2){
+	width: 94.2%;
+	margin-bottom: 10px;
+}
+.congrats-form-bottom input:nth-child(3){
+	width: 43%;
+	float: left;
+}
+.congrats-form-bottom input:nth-child(4){
+	width: 43%;
+	float: right;
+}
+.congrats-form-submit{
+	text-align: justify;
+	-moz-text-align-last: justify;
+	text-align-last: justify;
+}
+.congrats-form-submit label{
+	display: inline-block;
+	font-size: 0.6rem;
+}
+.congrats-form-submit input[type="checkbox"]{
+	vertical-align: middle;
+}
+.congrats-form-submit span.checkbox{
+	vertical-align: middle;
+	font-style: italic;
+}
+.congrats-form-submit input[type="submit"]{
+    padding: 20px 68px;
+	background-color: #b31d1d;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+	font-family: 'Comfortaa';
+	font-size: 0.9rem;
+}
+.congrats-label .custom-checkbox{
+	vertical-align: middle;
+	width: 28px;
+	height: 28px;
+	border-radius: 5px;
+}
+.congrats-label .old-checkbox:checked + .custom-checkbox::before{
+	width: 16px;
+	height: 13px;
+	top: 7px;
+	left: 7px;
+	background-image: url("../img/icons/checkbox-icon-big.png");
+}
+.congrats-form-links{
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px dashed #b52222;
+}
+.congrats-form-links a{
+	display: inline-block;
+	margin-right: 10.5%;
+	font-size: 0.7rem;
+	font-style: italic;
+}
+.congrats-form-links a:last-child{
+	margin-right: 0;
+}
+.actors h2{
+	text-align: center;
+	font-size: 2.4rem;
+}
+.actors-list{
+	padding: 0;
+	margin: 0;
+	margin-top: 40px;
+	list-style: none;
+}
+.actors-list li{
+	display: inline-block;
+	vertical-align: top;
+	width: 30.955%;
+	margin-right: 3.55%;
+	margin-bottom: 3.55%;
+}
+.actors-list li:nth-child(3n){
+	margin-right: -5px;
+}
+.actors-list .actors-img{
+	width: 100%;
+	border-radius: 5px;
+}
+.actors-list .hover-icon{
+    top: 33%;
+}
+.actors-list .actor-info{
+}
+.actors-list .actor-name,
+.actors-list .actor-description{
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.actors-list .actor-name{
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+}
+.actors-list .actor-description{
+	font-size: 0.7rem;
+}
+.actors-list .image-add-plus{
+	top: 40%;
+    left: 40%;
+    width: 18%;
+}
+.actors-list .empty-img{
+	position: relative;
+}
+.actors-list .empty-img::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 87%;
+	border: 1px dashed #b31d1d;
+	border-radius: 10px;
+}
+.actors-list .empty-img::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background-image: url("../img/icons/plus.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 15%;
+	height: 15%;
+}
+.costumes h2{
+	text-align: center;
+	font-size: 2.4rem;
+}
+.costumes-list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.costumes-list li{
+	display: inline-block;
+	vertical-align: top;
+	width: 30.955%;
+	margin-right: 3.55%;
+	margin-bottom: 3.55%;
+}
+.costumes-list li:nth-child(3n){
+	margin-right: -5px;
+}
+.costumes-list .costume-img{
+	width: 100%;
+	border-radius: 5px;
+}
+.costumes-list .hover-icon{
+	top: 43.5%;
+}
+.costumes-list .hover-info{
+	top: 0;
+	height: 100%;
+	text-align: center;
+}
+.costumes-list .hover-item{
+	position: relative;
+	display: block;
+	color: #fff;
+	font-size: 16px;
+}
+.costumes-list .costume-price{
+	top: 26px;
+	font-style: italic;
+}
+.costumes-list .costume-name{
+	top: 240px;
+	font-style: italic;
+	font-size: 15px;
+}
+.costumes-list .costume-order{
+    top: 270px;
+}
+.costumes-list .costume-order span{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.costumes-list .image-add-plus{
+	top: 40%;
+    left: 40%;
+    width: 18%;
+}
+
+/****************************************************************************/
+/*******************************стили для footer*******************************/
+
+
+/****************************************************************************/
+/*******************************стили для actors-popup*******************************/
+.popup-layer{
+	display: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+}
+.popup-container{
+	/*display: none;*/
+	position: relative;
+}
+.actors-popup{
+	display: none;
+	position: fixed;
+	top: 5%;
+	width: 1140px;
+	background-color: #fff6e3;
+	border-radius: 10px;
+}
+.actors-popup .actors-popup-close{
+    position: absolute;
+    top: -25px;
+    right: -25px;
+	cursor: pointer;
+}
+.actors-popup .popup-wrapper{
+	width: 95%;
+    margin: 0 auto;
+}
+.actors-popup .popup-navigation-list{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: justify;
+	-moz-text-align-last: justify;
+	text-align-last: justify;
+}
+.actors-popup .popup-navigation-item{
+	position: relative;
+	display: inline-block;
+	font-size: 0.9rem;
+}
+.actors-popup .popup-navigation-item:first-child{
+	left: 30px;
+}
+.actors-popup .popup-navigation-item:last-child{
+	right: 30px;
+}
+.actors-popup .popup-title-item{
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+.actors-popup .popup-navigation-item a{
+	position: relative;
+	color: inherit;
+	text-decoration: none;
+}
+.actors-popup .popup-navigation-item:first-child a::before{
+	content: '<<';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -30px;
+	font-weight: bold;
+}
+.actors-popup .popup-navigation-item:last-child a::after{
+	content: '>>';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: -30px;
+	font-weight: bold;
+}
+.popup-actors-about .popup-actor-image-holder{
+	float: left;
+	width: 13%;
+	line-height: 0;
+}
+.popup-actors-about img{
+	width: 100%;
+}
+.popup-actors-about .popup-actor-info{
+	float: right;
+	width: 87%;
+	padding-left: 15px;
+	margin-right: -15px;
+	padding-top: 5px;
+}
+.popup-actors-about .popup-actor-name{
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 1.2rem;
+}
+.popup-actors-about .popup-actor-description{
+	margin-bottom: 0;
+	font-size: 0.8rem;
+}
+.popup-actors-about .popup-actor-couple{
+	text-align: right;
+}
+.popup-actors-about .popup-couple-with{
+	display: inline-block;
+	width: 13%;
+	text-align: center;
+}
+.popup-actors-about .popup-actor-border{
+	display: inline-block;
+	width: 87%;
+	margin-right: -6px;
+	overflow: hidden;
+}
+.popup-actors-about .popup-actor-border::before{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	margin-right: -15px;
+	vertical-align: middle;
+	border-bottom: 1px dashed #b72a29;
+}
+.actors-popup .order-promo{
+    width: 78%;
+    margin: 0 auto;
+}
+.popup-promo{
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+.popup-promo .popup-promo-image{
+	float: left;
+	width: 67%;
+}
+.popup-promo .popup-promo-image-item{
+	float: left;
+	width: 22%;
+	margin-right: 20px;
+}
+.popup-promo .popup-promo-image-add-item{
+	position: relative;
+}
+.popup-promo .popup-promo-image-add-item:hover{
+	cursor: pointer;
+}
+.popup-promo .popup-promo-image-add-border{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	width: 89%;
+	height: 89%;
+	border: 1px dashed #b31d1d;
+	border-radius: 3px;
+}
+.popup-promo .popup-promo-image-add-plus{
+	position: absolute;
+	top: 40%;
+	left: 35%;
+	width: 28%;
+}
+.popup-promo img{
+	width: 100%;
+	border-radius: 5px;
+}
+.popup-promo .popup-promo-video{
+	float: right;
+	width: 33%;
+}
+.popup-promo .popup-promo-video p{
+	margin-top: 10px;
+}
+.popup-promo .popup-promo-video a{
+	color: #11100f;
+	font-size: 1.1rem;
+}
+.video-popup{
+	display: none;
+	background: white;
+	position: fixed;
+	width: 533px;
+	height: 300px;
+	top: 10%;
+	left: 40%;
+}
+.show-popup{
+	display: block;
+}
+
