@@ -206,6 +206,9 @@ label .old-checkbox:checked + .custom-checkbox::before{
     font-size: 18px;
     color: #b31d1d;
 }
+.mobile-plus{
+	display: none;
+}
 
 /***************************************************************************/
 /***************************стили для header********************************/
@@ -1027,6 +1030,9 @@ label .old-checkbox:checked + .custom-checkbox::before{
 footer .order-promo{
 	display: none;
 }
+.order-promo-mobile{
+	display: none;
+}
 
 /****************************************************************************/
 /*******************************стили для actors-popup*******************************/
@@ -1299,25 +1305,66 @@ footer .order-promo{
 	.costumes-list .image-add-item{
 		display: none;
 	}
+	.mobile-plus{
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 350px;
+		height: 70px;
+		background: #fff;
+		border-radius: 5px;
+	}
+	.mobile-plus .image-add-border{
+		top: 15.5%;
+		left: 3.5%;
+		width: 92%;
+		height: 70%;
+	}
+	.mobile-plus img{
+		top: 36%;
+		left: 10%;
+		width: 6%;
+	}
+	.mobile-plus .image-add-more{
+		left: 18%;
+		bottom: 33%;
+	}
+	.mobile-slide-list li{
+		width: 350px;
+		vertical-align: middle;
+	}
+	.mobile-slide-list li:not(.css-image-main){
+		width: 262.5px;
+	}
 	.top-links{
-		width: 180%;
+		width: 200%;
 	}
 	.top-links-list{
 		position: relative;
-		left: -21%;
+		left: -24%;
 	}
 	.top-links-list li{
-		width: 262px;
+		/*width: 262px;*/
+	}
+	.top-links-list li:not(.css-image-main){
+		position: relative;
+		/*top: 23px;*/
+		/*vertical-align: top;*/
+		/*width: 186.5px;*/
 	}
 	.top-order{
-		width: 180%;
+		width: 200%;
 	}
 	.top-order-list{
 		position: relative;
-		left: -21%;
+		left: -24%;
 	}
 	.top-order-list li{
-		width: 262px;
+		/*width: 262px;*/
+		/*vertical-align: middle;*/
+	}
+	.top-order-list li:not(.css-image-main){
+		/*width: 186.5px;*/
 	}
 	.congrats-order form{
 		width: 87.5%;
@@ -1376,7 +1423,7 @@ footer .order-promo{
 		display: none;
 	}
 	.actors{
-		width: 480%;
+		width: 500%;
 	}
 	.actors h2{
 		width: 21%;
@@ -1386,14 +1433,19 @@ footer .order-promo{
 		left: -45%;
 	}
 	.actors-list li{
-		width: 262px;
+		/*width: 262px;*/
 		margin-right: 1%;
+		/*vertical-align: middle;*/
+		margin-bottom: 1.25%;
 	}
 	.actors-list li:nth-child(3n){
 		margin-right: 1%;
 	}
+	.actors-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
 	.costumes{
-		width: 480%;
+		width: 500%;
 	}
 	.costumes h2{
 		width: 21%;
@@ -1403,10 +1455,88 @@ footer .order-promo{
 		left: -45%;
 	}
 	.costumes-list li{
-		width: 262px;
+		/*width: 262px;*/
 		margin-right: 1%;
+		margin-bottom: 1.25%;
+		/*vertical-align: middle;*/
 	}
 	.costumes-list li:nth-child(3n){
 		margin-right: 1%;
 	}
+	.costumes-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
+	.promo{
+		margin-top: 30px;
+	}
+	.promo-videos{
+		width: 480%;
+	}
+	.videos-list{
+		position: relative;
+		left: -29.85%;
+	}
+	.videos-list li{
+		/*position: relative;*/
+		/*width: 262px;*/
+		margin-right: 23px;
+		/*vertical-align: middle;*/
+	}
+	.videos-list li:nth-child(3n){
+		margin-right: 23px;
+	}
+	.videos-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
+	.footer-phone{
+		float: none;
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	.footer-phone div:first-child{
+		font-size: 2.6rem;
+	}
+	.footer-social{
+		float: none;
+		width: 100%;
+	}
+	.social-list{
+		float: none;
+	}
+	.social-list li{
+		width: 50px;
+		height: 50px;
+		margin-left: 0;
+		margin-right: 30px;
+	}
+	.social-list li:last-child{
+		margin-right: 0;
+	}
+	footer .order-promo {
+		display: none;
+	}
+	.order-promo-mobile{
+		display: block;
+	}
+	.order-promo-mobile .order-info{
+		float: none;
+		width: 100%;
+	}
+	.order-promo-mobile input[type="text"]{
+		box-sizing: border-box;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.order-promo-mobile .promo-label{
+		margin-bottom: 20px;
+	}
+	.order-promo-mobile input[type="submit"]{
+		width: 100%;
+		padding: 12px 190px;
+	}
+}
+@media screen and (max-width: 480px) {
+	/*.container{
+		width: 100%;
+	}*/
 }
