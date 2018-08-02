@@ -12,8 +12,10 @@ var popupClose = document.querySelector('.popup-container .actors-popup-close');
 var imageAddItem = document.querySelectorAll('.image-add-item');
 var imageNumber = 1;
 
+var priceShowBox = document.querySelectorAll('.price-show');
+//console.log(priceShowBox);
+
 var orderImageLink = document.querySelectorAll('.top-order-list-description a');
-console.log(topLinks);
 
 showCallBack.addEventListener('click', function(evt){
 	evt.preventDefault();
@@ -78,7 +80,7 @@ for (var i = 0; i < imageAddItem.length; i++) {
 
 function addImageBefore(addImageItem) {
 	var newImage = document.createElement('li');
-	var imageSwitch = addImageItem.parentNode.className;
+	var imageSwitch = addImageItem.parentNode.className.split(' ')[0];
 	newImage.innerHTML = getNewImage(imageSwitch);
 	
 	var addedImage = addImageItem.parentNode.insertBefore(newImage, addImageItem);
@@ -110,6 +112,19 @@ function getNewImage(imageSwitch) {
 						hoverInfo
 				'</div>'+
 		   '</a>';
+}
+
+for (var i = 0; i < priceShowBox.length; i++) {
+	priceShowBox[i].addEventListener('click', function() {
+		if(this.classList.contains('price-show-active')){
+			this.classList.remove('price-show-active');
+			this.nextElementSibling.classList.remove('price-table-block-active');
+		}
+		else{
+			this.classList.add('price-show-active');
+			this.nextElementSibling.classList.add('price-table-block-active');
+		}
+	});
 }
 
 function linkReset(evt) {
