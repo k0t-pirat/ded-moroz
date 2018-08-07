@@ -197,3 +197,23 @@ if (screen.width < 750) {
 		});
 	}
 }
+
+//-------------------------------------------------services---------------------------------------------//
+var serviceType = document.querySelectorAll('.service-type');
+var serviceItem = document.querySelectorAll('.service-item');
+
+for (var i = 0; i < serviceType.length; i++) {
+	serviceType[i].addEventListener('click', function(evt){
+		if (!this.classList.contains('active')) {
+			this.parentElement.querySelector('.active').classList.remove('active');
+			this.classList.add('active');
+			
+			for (var i = 0; i < serviceItem.length; i++) {
+				if (serviceItem[i].dataset.number === this.dataset.number){
+					serviceItem[i].parentElement.querySelector('.active').classList.remove('active');
+					serviceItem[i].classList.add('active');
+				}
+			}
+		}
+	});
+}

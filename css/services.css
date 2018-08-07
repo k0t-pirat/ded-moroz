@@ -1,0 +1,132 @@
+.service-type{
+	float: left;
+	/*width: 217px;*/
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #b31d1d;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.service-type:hover{
+	cursor: pointer;
+}
+.service-type.active{
+	background-color: #fff;
+}
+.service-type div{
+	/*padding-top: 5px;
+	padding-bottom: 5px;*/
+	padding: 5px 50px;
+	text-align: center;
+}
+.service-type.active div{
+	border: 1px dashed #b31d1d;
+	border-radius: 5px;
+}
+.service-item{
+	display: none;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 0 5px 5px 5px;
+}
+.service-item.active{
+	display: block;
+}
+.service-item-paragraph{
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 0.8rem;
+}
+.service-item-paragraph .strong-text{
+	font-weight: bold;
+}
+
+.costume-showcase-list li{
+	float: left;
+	margin-right: 1.6%;
+}
+.costume-showcase-list li:last-child{
+	margin-right: 0;
+}
+.costume-showcase-image{
+	width: 170px;
+}
+.costume-showcase-image img{
+	width: 100%;
+}
+.costume-showcase-image img:hover{
+	cursor: pointer;
+}
+.costume-showcase-video{
+	position: relative;
+}
+.costume-showcase-video:hover{
+	cursor: pointer;
+}
+.costume-showcase-video .play-button{
+	position: absolute;
+	top: 20%;
+    left: 33%;
+}
+.costume-showcase-video .hover-background{
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+}
+.costume-showcase-video .play-signature{
+	display: none;
+    position: absolute;
+    top: 115px;
+    left: 55px;
+    color: #fff;
+	font-size: 0.7rem;
+}
+.costume-showcase-video:hover .hover-background,
+.costume-showcase-video:hover .play-signature{
+	display: block;
+}
+.costume-showcase-video img{
+	display: block;
+}
+.costume-showcase-price{
+	margin-top: 9px;
+    margin-bottom: 5px;
+	text-align: center;
+}
+.costume-showcase-price-value{
+	color: #b31d1d;
+	font-weight: bold;
+}
+.costume-showcase-order .select-selected{
+	margin-bottom: 10px;
+	padding: 12px;
+	font-size: 0.7rem;
+}
+.costume-showcase-order .select-selected::after{
+	top: 15px;
+    right: 12px;
+    width: 15px;
+}
+.costume-showcase-order .select-items{
+	top: 40px;
+	font-size: 0.7rem;
+}
+.costume-showcase-order input[type="submit"]{
+    width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #b31d1d;
+    border: none;
+    outline: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 0.8rem;
+}
+.costume-showcase-order input[type="submit"]:hover{
+	cursor: pointer;
+}
