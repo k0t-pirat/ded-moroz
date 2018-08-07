@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link href="css/layout.css" rel="stylesheet">
+	<link href="css/contacts.css" rel="stylesheet">
+	<link href="css/mobile.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="main-header">
+	<div class="header-background">
+		<img src="img/header-background.jpg" alt="фон шапки">
+	</div>
+	<div class="container">
+		<p class="tel-number"></p>
+		<nav class="page-navigation">
+			<div class="page-navigation-list-wrapper">
+				<ul class="page-navigation-list">
+					<li><a href="#main">Главная</a></li>
+					<li><a href="#actors">Актеры</a></li>
+					<li><a href="#costumes">Костюмы</a></li>
+					<li><a href="#vip">VIP услуги</a></li>
+					<li><a href="#pricing">Цена</a></li>
+					<li><a href="#photovideo">Фото и Видео</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="page-navigation-form">
+				<form action="" method = "get">
+					<input name="top-search" type="search" placeholder="Поиск по сайту">
+					<button type="submit"></button>
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</nav>
+	</div>
+</header>
+<div class="main-background">
+	<div class="container">
+		<main class="main-content index-page">
+			<section class="top-links">
+				<ul class="top-links-list mobile-slide-list">
+					<li class="js-image js-image-left">
+						<a href="#" target="_blank" class="item-wrapper">
+							<img src ="img/top-links-competition.jpg" alt="Здесь будет картинка с конкурсом">
+							<span class="hover-background"></span>
+							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
+						</a>
+						<a href="#">Проголосовать за школу или детский сад</a>
+					</li><li class="js-image js-image-main css-image-main">
+						<a href="#" target="_blank" class="item-wrapper">
+							<img src ="img/top-links-snegurka.jpg" alt="Здесь будет картинка с дедом-морозом и снегурочкой">
+							<span class="hover-background"></span>
+							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
+						</a>
+						<a href="#">Получить скидку 15%</a>
+					</li><li class="js-image js-image-right">
+						<a href="#" target="_blank" class="item-wrapper">
+							<img src ="img/top-links-chocolate.jpg" alt="Здесь будет картинка с шоколадной фабрикой">
+							<span class="hover-background"></span>
+							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
+						</a>
+						<a href="#">Получить золотой билет на шоколадную фабрику</a>
+					</li>
+				</ul>
+			</section>
+			
+		<!------------------------------------------------------------------------------->
+		<!----------------------------------layout--------------------------------------->
+		<!------------------------------------------------------------------------------->
+		
+			<section class="contacts">
+				<h2>Контакты</h2>
+				<p> 9:30 до 20:00 по субботам c 11:00 до 16:00
+					<i class="far fa-clock"></i></p>
+				<p>+7 (495) 646 -00-67
+					<i class="fas fa-phone"></i></p>
+				<p>info@systemice.ru
+					<i class="fas fa-envelope"></i></p>
+				<p>г. Москва, ул. Бауманская д.6. Бизнес-центр Виктория Плаза. 3 этаж. 309 офис
+					<i class="fas fa-location-arrow"></i></p>
+			</section>
+			<article class="order-promo">
+				<div class="promo-image">
+					<img src="img/santa-claus.png">
+				</div>
+				<div class="order-info">
+					<h3>Успейте заказть деда мороза на дом</h3>
+					<form class="order-form">
+						<div class="order-form-top">
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Телефон">
+							<input type="submit" value="Заказать">
+						</div>
+						<label class="promo-label">
+							<input type="checkbox" checked class="old-checkbox">
+							<span class="custom-checkbox"></span>
+							<span>Я согласен на обработку персональных данных</span>
+						</label>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</article>
+			<section class="company-info">
+				<div class="company-location">
+					<div class="maot-routes">
+						<ul>
+							<li class="maot-route maot-route-active metro baum">Бауманская</li>
+							<li class="maot-route metro ksel">Красосельская</li>
+							<li class="maot-route parking">Парковка</li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<div id="maotmap"></div>
+				</div>
+				<div class="company-services">
+					<p>В нашей команде Дедов Морозов - только профессиональные актеры и ведущие, аниматоры, 
+						которые сделают праздник веселым, шумным и запоминающимся. </p>
+					<h3>Наши услуги:</h3>
+					<ul class="services-list">
+						<li><i class="fas fa-caret-right"></i> <a href="#">Вызов Деда Мороза и Снегурочки на дом</a></li>
+						<li><i class="fas fa-caret-right"></i> <a href="#">VIP Дед Мороз и Снегурочка</a></li>
+						<li><i class="fas fa-caret-right"></i> <a href="#">Проведение мини-спектаклей</a> с участием Деда Мороза, Снегурочки с участием сказочных персонажей</li>
+						<li><i class="fas fa-caret-right"></i> Вызов Деда Мороза и Снегурочки вместе <a href="#">с дополнительными сказочными персонажами</a></li>
+						<li><i class="fas fa-caret-right"></i> Вызов Деда Мороза и Снегурочки <a href="#">в офис, на корпоративный праздник</a></li>
+						<li><i class="fas fa-caret-right"></i> Вызов Деда Мороза и Снегурочки на вечеринку</li>
+						<li><i class="fas fa-caret-right"></i> Оригинальное поздравление от Деда Мороза и Снегурочки</li>
+						<li><i class="fas fa-caret-right"></i> Приглашение Деда Мороза и Снегурочки - аниматоров на новогоднюю программу</li>
+						<li><i class="fas fa-caret-right"></i> Участие Деда Мороза и Снегурочки в промо-акциях</li>
+					</ul>
+				</div>
+			</section>
+			
+		<!------------------------------------------------------------------------------->
+		<!----------------------------------layout--------------------------------------->
+		<!------------------------------------------------------------------------------->
+		
+		
+			<article class="order-promo">
+				<div class="promo-image">
+					<img src="img/santa-claus.png">
+				</div>
+				<div class="order-info">
+					<h3>Успейте заказть деда мороза на дом</h3>
+					<form class="order-form">
+						<div class="order-form-top">
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Телефон">
+							<input type="submit" value="Заказать">
+						</div>
+						<label class="promo-label">
+							<input type="checkbox" checked class="old-checkbox">
+							<span class="custom-checkbox"></span>
+							<span>Я согласен на обработку персональных данных</span>
+						</label>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</article>
+			<article class="feedback">
+				<h2>Отзывы о нашей работе</h2>
+				<div class="feedback-container">
+					<img src="img/vk-feedback.png" class="feedback-img">
+				</div>
+			</article>
+		</main>
+		<aside class="promo">
+			<section class="top-links">
+				<ul class="top-links-list">
+					<li class="aside-link">
+						<a href="#" target="_blank" class="item-wrapper">
+							<img src ="img/top-links-deer.jpg" alt="Здесь будет картинка с оленем">
+							<span class="hover-background"></span>
+							<img src="img/icons/ico2.png" alt="иконка для наведения" class="hover-icon">
+						</a>
+						<a href="#">Перейти к результатам</a>
+					</li>
+				</ul>
+			</section>
+			<div class="promo-callback">
+				<p>+7 (499) 646-00-67</p>
+				<button>Заказать обратный звонок</button>
+			</div>
+			<div class="promo-videos">
+				<ul class="videos-list mobile-slide-list">
+					<li class="js-image">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(1).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+							<!--<iframe width="100%" height="auto" src="https://www.youtube.com/embed/WiBL9jEcx7c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(2).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(3).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image js-image-left">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(4).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image js-image-main css-image-main">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(5).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image js-image-right">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(6).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image">
+					</li><li class="js-image">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(7).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(8).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(9).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li><li class="js-image">
+						<div class="video-wrapper">
+							<div class="image-holder">
+								<img src="img/video/mqdefault(10).jpg" class="video-image">
+								<span class="hover-background"></span>
+								<img src="img/icons/play-button.png" class="play-button">
+								<span class="play-signature">Смотреть видео</span>
+							</div>
+						</div>
+						<a class="video-title">Новогодняя ёлка для малышей</a>
+						<div class="video-stats">
+							<span class="video-new">New</span>
+							<span class="video-views"><img src="img/icons/looking-eye.png">  717</span>
+							<span class="video-likes"><img src="img/icons/like.png">  23</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<footer class="main-footer">
+	<div class="container">
+		<section class="footer-top">
+			<div class="footer-phone">
+				<div>+7 (499) 646-00-67</div>
+				<div class="footer-phone-order"><a href="#">Заказать обратный звонок</a></div>
+			</div>
+			<div class="footer-social">
+				<ul class="social-list">
+					<li><a href="#vk"><img src="img/icons/vk.png" alt="Здесь будет иконка соцсети" width="55" height="55"></a></li>
+					<li><a href="#youtube"><img src="img/icons/youtube.png" alt="Здесь будет иконка соцсети" width="55" height="55"></a></li>
+					<li><a href="#fb"><img src="img/icons/facebook.png" alt="Здесь будет иконка соцсети" width="55" height="55"></a></li>
+					<li><a href="#insta"><img src="img/icons/instagram.png" alt="Здесь будет иконка соцсети" width="55" height="55"></a></li>
+					<li><a href="#telegram"><img src="img/icons/telegram.png" alt="Здесь будет иконка соцсети" width="55" height="55"></a></li>
+					<li><a href="#doodle"><img src="img/icons/google-plus.png" alt="Здесь будет иконка соцсети" width="55" height="55"></a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="footer-order">
+			<img src="img/santa-claus.png" alt="ded-moroz">
+			<h3>Закажите Деда Мороза</h3>
+			<form class="footer-order-form">
+				<input type="text" placeholder="Имя">
+				<input type="text" placeholder="Телефон">
+				<label class="footer-label">
+					<input type="checkbox" checked class="old-checkbox">
+					<span class="custom-checkbox"></span>
+					<span>Я согласен на обработку персональных данных</span>
+				</label>
+				<input type="submit" value="Заказать">
+			</form>
+		</section>
+		<article class="order-promo">
+			<div class="promo-image">
+				<img src="img/santa-claus.png">
+			</div>
+			<div class="order-info">
+				<h3>Успейте заказть деда мороза на дом</h3>
+				<form class="order-form">
+					<div class="order-form-top">
+						<input type="text" placeholder="Имя">
+						<input type="text" placeholder="Телефон">
+						<input type="submit" value="Заказать">
+					</div>
+					<label class="promo-label">
+						<input type="checkbox" checked class="old-checkbox">
+						<span class="custom-checkbox"></span>
+						<span>Я согласен на обработку персональных данных</span>
+					</label>
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</article>
+		<article class="order-promo-mobile">
+			<div class="order-info">
+				<h3>Закажите Деда Мороза</h3>
+				<form class="order-form">
+					<input type="text" placeholder="Имя">
+					<input type="text" placeholder="Телефон">
+					<label class="promo-label">
+						<input type="checkbox" checked class="old-checkbox">
+						<span class="custom-checkbox"></span>
+						<span>Я согласен на обработку персональных данных</span>
+					</label>
+					<input type="submit" value="Заказать">
+				</form>
+			</div>
+			<div class="clearfix"></div>
+		</article>
+		<div class="footer-bottom-left">
+			<nav class="footer-links">
+				<section class="footer-navigation">
+					<h4>Навигация</h4>
+					<ul class="footer-navigation-list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Актеры</a></li>
+						<li><a href="#">Костюмы</a></li>
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Фото и Видео</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</section>
+				<section class="footer-projects">
+					<h4>Наши проекты</h4>
+					<ul class="project-list">
+						<li><a href="#">Тимбилдинг</a></li>
+						<li><a href="#">Корп. Мероприятия</a></li>
+						<li><a href="#">Площадки</a></li>
+						<li><a href="#">Ведущие</a></li>
+						<li><a href="#">Корп. кейсы</a></li>
+						<li><a href="#">Туристические услуги</a></li>
+					</ul>
+				</section>
+				<section class="footer-helpful">
+					<h4>Полезно знать</h4>
+					<ul class="helpful-list">
+						<li><a href="#">Что за VIP пакет?</a></li>
+						<li><a href="#">Что входит в поздравление?</a></li>
+						<li><a href="#">Сколько будет стоить?</a></li>
+						<li><a href="#">Можно ли заказать актера?</a></li>
+						<li><a href="#">Как это работает?</a></li>
+						<li><a href="#">Какие гарантии?</a></li>
+					</ul>
+				</section>
+			</nav>
+			<section class="disclaimer">
+				<p>Уважаемые посетители сайта www.sysevent.ru, информируем Вас о том, что вся информация, представленная на 
+					нашем интернет ресурсе, а именно услуги, фотографии и цены, носит исключительно информационный <br>
+					характер и ни при каких условиях не является публичной офертой, определяемой положениями <br>
+					Ста тьи 437 (2) Гражданского кодекса РФ.</p>
+			</section>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</footer>
+<div class="popup-layer"></div>
+<div class="container popup-container">
+	<div class="actors-popup">
+		<div class="actors-popup-close">
+			<img src="img/icons/cross.png">
+		</div>
+		<div class="popup-wrapper">
+			<nav>
+				<ul class="popup-navigation-list">
+					<li class="popup-navigation-item"><a href="#previous">Предыдущая страница</a></li>
+					<li class="popup-navigation-item popup-title-item">Дед Мороз и Снегурочка</li>
+					<li class="popup-navigation-item"><a href="#next">Следующая страница</a></li>
+				</ul>
+			</nav>
+			<section class="popup-actors-about">
+				<div class="popup-one-actor-about">
+					<div class="popup-actor-image-holder">
+						<img src="img/actors/actor-8.jpg" alt="Картинка с актёром">
+					</div>
+					<div class="popup-actor-info">
+						<h3 class="popup-actor-name">Илья</h3>
+						<p class="popup-actor-description">45 лет. Выпускник ВТУ им. Щукина. Активно снимается в сериалах и фильмах. 
+							Подрабатывает аниматором на детских праздниках. 
+							Дедом Морозом работает уже 21 год, что доставляет ему колоссальное удовольствие. 
+							Любит работать с детьми и дарить им подарки. Самая лучшая для него награда – радостные улыбки детей и их родителей..</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="popup-actor-couple">
+					<p class="popup-couple-with">В паре с:</p>
+					<div class="popup-actor-border"></div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="popup-one-actor-about">
+					<div class="popup-actor-image-holder">
+						<img src="img/actors/actor-2.jpg" alt="Картинка с актёром">
+					</div>
+					<div class="popup-actor-info">
+						<h3 class="popup-actor-name">Ольга</h3>
+						<p class="popup-actor-description">19 лет. Студентка Всероссийского Государственного Института Кинематографии имени С. А. Герасимова. 
+							Работает Снегурочкой уже два года и планирует ей быть до самой старости. 
+							С легкостью находит общий язык с детьми, очень любит приносить им счастье своим появлением. 
+							Мечтает выйти замуж и быть Снегурочкой для своих собственных детей.</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</section>
+			<article class="order-promo">
+				<div class="promo-image">
+					<img src="img/santa-claus.png">
+				</div>
+				<div class="order-info">
+					<h3>Успейте заказть деда мороза на дом</h3>
+					<form class="order-form">
+						<div class="order-form-top">
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Телефон">
+							<input type="submit" value="Заказать">
+						</div>
+						<label class="promo-label">
+							<input type="checkbox" checked class="old-checkbox">
+							<span class="custom-checkbox"></span>
+							<span>Я согласен на обработку персональных данных</span>
+						</label>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</article>
+			<section class="popup-promo">
+				<div class="popup-promo-image">
+					<ul class="popup-promo-image-list">
+						<li class="popup-promo-image-item"><img src="img/costumes/costume-11-1.png" alt="Картинка с актёрами в костюмах"></li>
+						<li class="popup-promo-image-item"><img src="img/costumes/costume-14.png" alt="Картинка с актёрами в костюмах"></li>
+						<li class="popup-promo-image-item"><img src="img/costumes/costume-18.png" alt="Картинка с актёрами в костюмах"></li>
+						<li class="popup-promo-image-item popup-promo-image-add-item">
+							<img src="img/costumes/white-background.png" alt="Добавление картинки с актёрами в костюмах">
+							<div class="popup-promo-image-add-border"></div>
+							<img src="img/icons/plus.png" class="popup-promo-image-add-plus">
+						</li>
+					</ul>
+					<div class="clearfix"></div>
+				</div>
+				<div class="popup-promo-video">
+					<img src="img/video-promo.jpg">
+					<p><a href="#">Смотреть другие видео</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="container popup-container">
+	<div class="video-popup">
+		<iframe width="100%" height="100%;" src="https://www.youtube.com/embed/WiBL9jEcx7c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</div>
+</div>
+<script type="text/javascript" src="js/select-box.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script type="text/javascript" src="js/ymap.js"></script>
+</body>
+</html>

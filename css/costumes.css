@@ -1,0 +1,122 @@
+.costumes h2{
+	margin-top: 0;
+	text-align: center;
+	font-size: 2.4rem;
+}
+.costume-item{
+	margin-bottom: 20px;
+	padding: 15px 20px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.costume-title{
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px dashed #b31d1d;
+	border-bottom: 1px dashed #b31d1d;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.costume-name{
+	margin: 0;
+	float: left;
+	font-size: 1rem;
+}
+.costume-type{
+	margin: 0;
+	float: right;
+	color: #b31d1d;
+}
+.costume-showcase-list li{
+	float: left;
+	margin-right: 2%;
+}
+.costume-showcase-list li:last-child{
+	margin-right: 0;
+}
+.costume-showcase-image img:hover{
+	cursor: pointer;
+}
+.costume-showcase-video{
+	position: relative;
+}
+.costume-showcase-video:hover{
+	cursor: pointer;
+}
+.costume-showcase-video .play-button{
+	position: absolute;
+	top: 20%;
+    left: 33%;
+}
+.costume-showcase-video .hover-background{
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.5);
+}
+.costume-showcase-video .play-signature{
+	display: none;
+    position: absolute;
+    top: 115px;
+    left: 55px;
+    color: #fff;
+	font-size: 0.7rem;
+}
+.costume-showcase-video:hover .hover-background,
+.costume-showcase-video:hover .play-signature{
+	display: block;
+}
+.costume-showcase-video img{
+	display: block;
+}
+.costume-showcase-price{
+	margin-top: 13px;
+    margin-bottom: 5px;
+	text-align: center;
+}
+.costume-showcase-price-value{
+	color: #b31d1d;
+	font-weight: bold;
+}
+.costume-showcase-order .select-selected{
+	margin-bottom: 10px;
+	padding: 12px;
+	font-size: 0.7rem;
+}
+.costume-showcase-order .select-selected::after{
+	top: 15px;
+    right: 12px;
+    width: 15px;
+}
+.costume-showcase-order .select-items{
+	top: 40px;
+	font-size: 0.7rem;
+}
+.costume-showcase-order input[type="submit"]{
+    width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #b31d1d;
+    border: none;
+    outline: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 0.8rem;
+}
+.costume-showcase-order input[type="submit"]:hover{
+	cursor: pointer;
+}
+.costume-description{
+	font-size: 0.7rem;
+}
+.costume-description-title{
+	font-weight: bold;
+}
+.costume-description-paragraph:first-child{
+	margin-bottom: 20px;
+}

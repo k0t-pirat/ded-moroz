@@ -1,0 +1,80 @@
+.contacts{
+	margin-bottom: 50px;
+}
+.contacts h2{
+	margin-top: 0;
+	margin-bottom: 75px;
+	text-align: center;
+	font-size: 2.4rem;
+}
+.contacts p{
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.contacts p i{
+	position: absolute;
+    left: -30px;
+    top: 0;
+}
+.company-info{
+	font-size: 0.7rem;
+	margin-bottom: 50px;
+}
+.services-list li{
+	margin-bottom: 5px;
+}
+.services-list i{
+	vertical-align: middle;
+	font-size: 0.8rem;
+	color: #b31d1d;
+}
+.services-list a{
+	color: #b31d1d;
+}
+.maot-routes{
+	float: right;
+	width: 77%;
+}
+.maot-routes ul{
+	margin-left: 25px;
+}
+.maot-route{
+	position: relative;
+	display: inline-block;
+    margin-right: 50px;
+	font-size: 0.8rem;
+    font-weight: bold;
+}
+.maot-route:hover{
+	cursor: pointer;
+}
+.maot-route.metro::after{
+	content: "";
+	position: absolute;
+	left: -25px;
+	width: 20px;
+	height: 25px;
+	background-image: url('../img/icons/metro.png');
+	background-repeat: no-repeat;
+}
+.maot-route.parking::after{
+	content: "";
+	position: absolute;
+	left: -25px;
+	width: 20px;
+	height: 25px;
+	background-image: url('../img/icons/parking.png');
+	background-repeat: no-repeat;
+}
+.maot-route-active{
+	border-bottom: 7px solid #2c48c0;
+}
+
+#maotmap{
+	width: 100%;
+	height: 450px;
+}
