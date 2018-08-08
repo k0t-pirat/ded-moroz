@@ -244,3 +244,15 @@ for (var i = 0; i < videosNavigationItem.length; i++) {
 		this.classList.add('active');
 	});
 }
+
+//----------------------------------------------video----------------------------------------------------//
+
+var photosNavigationItem = document.querySelectorAll('.photos-navigation-list li');
+
+for (var i = 0; i < photosNavigationItem.length; i++) {
+	photosNavigationItem[i].addEventListener('click', function(){
+		var photosNavigationItemActive = this.parentElement.querySelector('.active');
+		photosNavigationItemActive.classList.remove('active');
+		this.classList.add('active');
+	});
+}

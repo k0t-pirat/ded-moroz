@@ -1,0 +1,84 @@
+.photos-title{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 2.4rem;
+	text-align: center;
+}
+.photos-navigation{
+	margin-bottom: 20px;
+}
+.photos-navigation-list{
+	text-align: center;
+}
+.photos-navigation-list li{
+	display: inline-block;
+	margin-right: 35px;
+}
+.photos-navigation-list li:hover{
+	cursor: pointer;
+}
+.photos-navigation-list li.active{
+	font-weight: bold;
+}
+
+/*.costumes h2{
+	text-align: center;
+	font-size: 2.4rem;
+}*/
+.costumes-list{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.costumes-list li{
+	display: inline-block;
+	vertical-align: top;
+	width: 30.955%;
+	margin-right: 3.55%;
+	margin-bottom: 3.55%;
+}
+.costumes-list li:nth-child(3n){
+	margin-right: -5px;
+}
+.costumes-list .costume-img{
+	width: 100%;
+	border-radius: 5px;
+}
+.costumes-list .hover-icon{
+	top: 43.5%;
+}
+.costumes-list .hover-info{
+	top: 0;
+	height: 100%;
+	text-align: center;
+}
+.costumes-list .hover-item{
+	position: relative;
+	display: block;
+	color: #fff;
+	font-size: 16px;
+}
+.costumes-list .costume-price{
+	top: 26px;
+	font-style: italic;
+}
+.costumes-list .costume-name{
+	top: 240px;
+	font-style: italic;
+	font-size: 15px;
+}
+.costumes-list .costume-order{
+    top: 270px;
+}
+.costumes-list .costume-order span{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.costumes-list .image-add-plus{
+	top: 40%;
+    left: 40%;
+    width: 18%;
+}
