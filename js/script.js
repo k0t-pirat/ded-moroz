@@ -217,3 +217,30 @@ for (var i = 0; i < serviceType.length; i++) {
 		}
 	});
 }
+
+//----------------------------------------------video----------------------------------------------------//
+var videoShareButtons = document.querySelectorAll('.video-share-button');
+var videoShareBlocks = document.querySelectorAll('.video-share-block');
+var videosNavigationItem = document.querySelectorAll('.videos-navigation-list li');
+
+for (var i = 0; i < videoShareButtons.length; i++) {
+	videoShareButtons[i].addEventListener('click', function(evt){
+		evt.preventDefault();
+		var videoShareBlock = this.parentElement.parentElement.querySelector('.video-share-block');
+		videoShareBlock.classList.add('video-share-block-show');
+	});
+}
+document.body.addEventListener('click', function(evt){
+	if (evt.target.closest('.video-share-button')) return;
+	else if (evt.target.closest('.video-share-block')) return;
+	for (var i = 0; i < videoShareBlocks.length; i++) {
+		videoShareBlocks[i].classList.remove('video-share-block-show');
+	}
+});
+for (var i = 0; i < videosNavigationItem.length; i++) {
+	videosNavigationItem[i].addEventListener('click', function(){
+		var videosNavigationItemActive = this.parentElement.querySelector('.active');
+		videosNavigationItemActive.classList.remove('active');
+		this.classList.add('active');
+	});
+}

@@ -1,0 +1,101 @@
+.videos-title{
+	margin-top: 0;
+	margin-bottom: 20px;
+	font-size: 2.4rem;
+	text-align: center;
+}
+.videos-navigation{
+	margin-bottom: 20px;
+}
+.videos-navigation-list{
+	text-align: center;
+}
+.videos-navigation-list li{
+	display: inline-block;
+	margin-right: 35px;
+}
+.videos-navigation-list li:hover{
+	cursor: pointer;
+}
+.videos-navigation-list li.active{
+	font-weight: bold;
+}
+.video-item{
+	position: relative;
+	width: 47.5%;
+	margin-bottom: 30px;
+}
+.video-item:nth-child(odd){
+	float: left;
+}
+.video-item:nth-child(even){
+	float: right;
+}
+.video-item .video-wrapper{
+	position: relative;
+}
+.video-item .video-image{
+	display: block;
+}
+.video-item .hover-background{
+	border-radius: 10px;
+}
+.video-item .play-button{
+	top: 28%;
+	left: 40%;
+}
+.video-item .play-signature{
+	top: 70%;
+    left: 32%;
+	font-size: 0.7rem;
+	font-weight: bold;
+}
+.video-item .video-stats{
+	margin-top: 10px;
+}
+.video-item a{
+	float: right;
+	font-size: 0.7rem;
+	color: #7f7b71;
+}
+.video-item .video-views-likes{
+	float: left;
+	font-size: 0.7rem;
+}
+.video-item .video-views{
+	margin-right: 35px;
+}
+.video-share-block{
+	display: none;
+	position: absolute;
+    right: 0;
+	width: 70%;
+	padding: 15px 20px;
+    border-radius: 10px;
+	background-color: #fff;
+	z-index: 1;
+}
+.video-share-block-text{
+	margin-top: 0;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+.video-share-list{
+	text-align: justify;
+	-moz-text-align-last: justify;
+	text-align-last: justify;
+}
+.video-share-list li{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+}
+.video-share-list img{
+	background: #fff;
+	width: 100%;
+	height: auto;
+}
+
+.video-share-block-show{
+	display: block;
+}
