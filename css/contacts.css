@@ -78,3 +78,25 @@
 	width: 100%;
 	height: 450px;
 }
+/*.ymaps-2-1-68-controls-pane{
+	display: none;
+}*/
+
+@media screen and (max-width: 750px) {
+	.maot-routes{
+		display: none;
+	}
+	.contacts,
+	.company-info{
+		width: 450px;
+		margin: 0 auto;
+	}
+	.company-info{
+		font-size: 0.8rem;
+	}
+	.contacts p{
+		left: 15px;
+		width: 92%;
+		font-size: 0.9rem;
+	}
+}

@@ -27,24 +27,52 @@ for (var i = 0; i < maotRoute.length; i++) {
 			});
 		});
 	});
+	
+	var routePanel = new ymaps.control.RoutePanel({
+		options: { 
+			position: { right: 5, top: 10 },
+			float: 'right',
+			type: 'pedestrian',
+			fromEnabled: false,
+			from: [55.776198, 37.675604],
+			toEnabled: false,
+			to: [55.772399, 37.678842]
+		}
+	}); 
+	
+	newMap.controls.add(routePanel);
 }*/
 
 ymaps.ready(function(){
-	var new_map = new ymaps.Map('maotmap', {
+	var newMap = new ymaps.Map('maotmap', {
 		center: [55.776198, 37.675604],
 		zoom: 15,
-		controls: ['routePanelControl']
+		controls: ['zoomControl']
 	});
+	newMap.behaviors.disable('scrollZoom');
+	newMap.controls.get('zoomControl');
 	
-	var control = new_map.controls.get('routePanelControl');
+	
+	newMap.controls.add('routePanelControl', {
+		position: { right: 5, top: 10 },
+		float: 'right',
+		//visible: false
+	}); 
+	
+	var control = newMap.controls.get('routePanelControl');
 	
 	control.routePanel.state.set({
 		type: 'pedestrian',
 		fromEnabled: false,
 		from: [55.776198, 37.675604],
 		toEnabled: false,
-		//to: [55.772399, 37.678842]
-		to: [55.780033, 37.666032]
+		to: [55.772399, 37.678842]
+	});
+	
+	control.routePanel.options.set({
+		allowSwitch: true,
+		//reverseGeocoding: false,
+		types: {masstransit: false, pedestrian: false, pedestrian: true}
 	});
 	
 	var maotRoute = document.querySelectorAll('.maot-route');
@@ -70,8 +98,6 @@ ymaps.ready(function(){
 				from: [55.776198, 37.675604],
 				toEnabled: false,
 				to: maotRouteFrom
-				//to: [55.772399, 37.678842]
-				//to: [55.780033, 37.666032]
 			});
 		});
 	}

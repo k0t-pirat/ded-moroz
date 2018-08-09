@@ -82,3 +82,49 @@
     left: 40%;
     width: 18%;
 }
+
+@media screen and (max-width: 750px) {
+	.photos:nth-child(3){
+		display: none;
+	}
+	.photos-navigation{
+		display: none;
+	}
+	.costumes-list{
+		text-align: center;
+	}
+	.costumes-list li{
+		width: 350px;
+		margin-right: 0;
+	}
+	.costumes-list li:nth-child(3){
+		margin-right: 0;
+	}
+	.costumes-list .image-add-item{
+		display: none;
+	}
+	.mobile-plus{
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		width: 350px;
+		height: 70px;
+		background: #fff;
+		border-radius: 5px;
+	}
+	.mobile-plus .image-add-border{
+		top: 15.5%;
+		left: 3.5%;
+		width: 92%;
+		height: 70%;
+	}
+	.mobile-plus img{
+		top: 36%;
+		left: 10%;
+		width: 6%;
+	}
+	.mobile-plus .image-add-more{
+		left: 18%;
+		bottom: 33%;
+	}
+}
