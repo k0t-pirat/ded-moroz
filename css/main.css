@@ -174,7 +174,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .item-wrapper .hover-info{
 	display: none;
 	position: absolute;
-	top: 149px;
+	bottom: 25px;
 	width: 100%;
 	text-align: center;
 }
@@ -411,7 +411,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 .video-wrapper .play-signature{
 	display: none;
 	position: absolute;
-	top: 120px;
+	bottom: 20px;
 	left: 55px;
 	color: #fff;
 }
@@ -700,7 +700,7 @@ label .old-checkbox:checked + .custom-checkbox::before{
 }
 .actors-list .actor-name,
 .actors-list .actor-description{
-	display: inline-block;
+	display: block;
 	color: #fff;
 	text-align: center;
 }
@@ -775,22 +775,23 @@ label .old-checkbox:checked + .custom-checkbox::before{
 	text-align: center;
 }
 .costumes-list .hover-item{
-	position: relative;
-	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
 	color: #fff;
 	font-size: 16px;
 }
 .costumes-list .costume-price{
-	top: 26px;
+	top: 25px;
 	font-style: italic;
 }
 .costumes-list .costume-name{
-	top: 240px;
+	bottom: 75px;
 	font-style: italic;
 	font-size: 15px;
 }
 .costumes-list .costume-order{
-    top: 270px;
+    bottom: 25px;
 }
 .costumes-list .costume-order span{
     display: inline-block;
@@ -1297,8 +1298,23 @@ footer .order-promo{
 }
 @media screen and (max-width: 750px) {
 	.container{
-		width: 480px;
+		width: 100%;
 		overflow: hidden;
+	}
+	.page-navigation-list-wrapper{
+		float: none;
+		width: 100%;
+	}
+	.page-navigation-list li{
+		margin-right: 2.5%;
+	}
+	.page-navigation-list a{
+		font-size: 0.7rem;
+	}
+	.page-navigation-form{
+		float: none;
+		width: 95%;
+		margin: 0 auto;
 	}
 	.order-promo,
 	.actors-list .image-add-item,
@@ -1341,7 +1357,7 @@ footer .order-promo{
 	}
 	.top-links-list{
 		position: relative;
-		left: -24%;
+		left: -21.5%;
 	}
 	.top-links-list li{
 		/*width: 262px;*/
@@ -1357,7 +1373,7 @@ footer .order-promo{
 	}
 	.top-order-list{
 		position: relative;
-		left: -24%;
+		left: -21.5%;
 	}
 	.top-order-list li{
 		/*width: 262px;*/
@@ -1365,6 +1381,9 @@ footer .order-promo{
 	}
 	.top-order-list li:not(.css-image-main){
 		/*width: 186.5px;*/
+	}
+	.congrats-order h3{
+		font-size: 1rem;
 	}
 	.congrats-order form{
 		width: 87.5%;
@@ -1430,7 +1449,7 @@ footer .order-promo{
 	}
 	.actors-list{
 		position: relative;
-		left: -45%;
+		left: -41.5%;
 	}
 	.actors-list li{
 		/*width: 262px;*/
@@ -1452,7 +1471,7 @@ footer .order-promo{
 	}
 	.costumes-list{
 		position: relative;
-		left: -45%;
+		left: -41.5%;
 	}
 	.costumes-list li{
 		/*width: 262px;*/
@@ -1467,14 +1486,15 @@ footer .order-promo{
 		/*width: 186.5px;*/
 	}
 	.promo{
+		width: 100%;
 		margin-top: 30px;
 	}
 	.promo-videos{
-		width: 480%;
+		width: 575%;
 	}
 	.videos-list{
 		position: relative;
-		left: -29.85%;
+		left: -36%;
 	}
 	.videos-list li{
 		/*position: relative;*/
@@ -1487,6 +1507,14 @@ footer .order-promo{
 	}
 	.videos-list li:not(.css-image-main){
 		/*width: 186.5px;*/
+	}
+	.video-wrapper .play-button{
+		top: 30%;
+		left: 40%;
+		width: 20%;
+	}
+	.video-wrapper .play-signature{
+		left: 35%;
 	}
 	.footer-phone{
 		float: none;
@@ -1532,11 +1560,59 @@ footer .order-promo{
 	}
 	.order-promo-mobile input[type="submit"]{
 		width: 100%;
-		padding: 12px 190px;
+		/*padding: 12px 190px;*/
 	}
 }
 @media screen and (max-width: 480px) {
 	/*.container{
 		width: 100%;
 	}*/
+	.top-links-list a{
+		font-size: 0.7rem;
+	}
+	.congrats-order h3{
+		font-size: 0.9rem;
+	}
+	.congrats-form-submit{
+		text-align: left;
+		text-align-last: inherit;
+	}
+	.congrats-form-submit label {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.congrats-form-submit input[type="submit"] {
+		width: 100%;
+	}
+	.congrats-dashed-block p:nth-child(1),
+	.congrats-dashed-block p:nth-child(2){
+		text-align: center;
+	}
+	.congrats-dashed-block .span-price-title,
+	.congrats-dashed-block .span-price{
+		display: block;
+	}
+	.costumes h2, .actors h2{
+		font-size: 1.8rem;
+	}
+	.mobile-plus{
+		width: 100%;
+	}
+	.video-wrapper .play-signature{
+		left: 30%;
+	}
+	.footer-phone div:first-child{
+		font-size: 1.8rem;
+	}
+	.order-info h3{
+		font-size: 1.2rem;
+	}
+}
+@media screen and (max-width: 400px) {
+	.video-wrapper .play-signature{
+		left: 25%;
+	}
+	.top-links-list a{
+		font-size: 0.55rem;
+	}
 }
