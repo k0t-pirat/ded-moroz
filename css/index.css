@@ -242,7 +242,7 @@
 }
 .actors-list .actor-name,
 .actors-list .actor-description{
-	display: inline-block;
+	display: block;
 	color: #fff;
 	text-align: center;
 }
@@ -317,22 +317,23 @@
 	text-align: center;
 }
 .costumes-list .hover-item{
-	position: relative;
-	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
 	color: #fff;
 	font-size: 16px;
 }
 .costumes-list .costume-price{
-	top: 26px;
+	top: 25px;
 	font-style: italic;
 }
 .costumes-list .costume-name{
-	top: 240px;
+	bottom: 75px;
 	font-style: italic;
 	font-size: 15px;
 }
 .costumes-list .costume-order{
-    top: 270px;
+    bottom: 25px;
 }
 .costumes-list .costume-order span{
     display: inline-block;
@@ -551,6 +552,27 @@
 }
 
 @media screen and (max-width: 750px) {
+	.mobile-slide-list li{
+		width: 350px;
+		vertical-align: middle;
+	}
+	.mobile-slide-list li:not(.css-image-main){
+		width: 262.5px;
+	}
+	.top-order{
+		width: 200%;
+	}
+	.top-order-list{
+		position: relative;
+		left: -21.5%;
+	}
+	.top-order-list li{
+		/*width: 262px;*/
+		/*vertical-align: middle;*/
+	}
+	.top-order-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
 	.actors-list .image-add-item,
 	.costumes-list .image-add-item{
 		display: none;
@@ -617,7 +639,7 @@
 		font-size: 0.75rem;
 	}
 	.congrats-dashed-block .span-price-title{
-		font-size: 0.9rem;
+		font-size: 0.85rem;
 	}
 	.congrats-label span{
 		display: inline-block;
@@ -643,7 +665,7 @@
 	}
 	.actors-list{
 		position: relative;
-		left: -45%;
+		left: -41.5%;
 	}
 	.actors-list li{
 		/*width: 262px;*/
@@ -665,7 +687,7 @@
 	}
 	.costumes-list{
 		position: relative;
-		left: -45%;
+		left: -41.5%;
 	}
 	.costumes-list li{
 		/*width: 262px;*/
@@ -678,5 +700,57 @@
 	}
 	.costumes-list li:not(.css-image-main){
 		/*width: 186.5px;*/
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.top-order{
+		width: 200%;
+	}
+	.top-order-list{
+		position: relative;
+		left: -21.5%;
+	}
+	.top-order-list li{
+		/*width: 262px;*/
+		/*vertical-align: middle;*/
+	}
+	.top-order-list li:not(.css-image-main){
+		/*width: 186.5px;*/
+	}
+	.congrats-order h3{
+		font-size: 0.9rem;
+	}
+	.congrats-form-submit{
+		text-align: left;
+		text-align-last: inherit;
+	}
+	.congrats-form-submit label {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.congrats-form-submit input[type="submit"] {
+		width: 100%;
+	}
+	.congrats-dashed-block p:nth-child(1),
+	.congrats-dashed-block p:nth-child(2){
+		text-align: center;
+	}
+	.congrats-dashed-block .span-price-title,
+	.congrats-dashed-block .span-price{
+		display: block;
+	}
+	.costumes h2, .actors h2{
+		font-size: 1.8rem;
+	}
+	.mobile-plus{
+		width: 100%;
+	}
+	.mobile-slide-list li{
+		width: 350px;
+		vertical-align: middle;
+	}
+	.mobile-slide-list li:not(.css-image-main){
+		width: 262.5px;
 	}
 }

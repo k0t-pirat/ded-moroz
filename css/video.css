@@ -99,3 +99,29 @@
 .video-share-block-show{
 	display: block;
 }
+
+@media screen and (max-width: 750px){
+	.video-item .play-button{
+		width: 20%;
+	}
+	.video-item .play-signature{
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 560px) and (min-width: 481px){
+	.video-item .video-stats{
+		margin-top: 0;
+	}
+	.video-item a{
+		float: none;
+	}
+}
+@media screen and (max-width: 480px){
+	.video-item:nth-child(even),
+	.video-item:nth-child(odd){
+		float: none;
+		width: 100%;
+	}
+}
