@@ -515,6 +515,9 @@ label .old-checkbox:checked + .custom-checkbox::before{
     background: #fdfbfb;
 	vertical-align: middle;
 }
+.order-info input.invalid-form{
+	border-color: red;
+}
 .order-info input[type="text"]{
 	width: 25%;
 }

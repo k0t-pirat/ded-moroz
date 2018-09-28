@@ -2,8 +2,10 @@
 var topLinks = document.querySelectorAll('.top-links-list .item-wrapper');
 var showActor = document.querySelectorAll('.actors-list .item-wrapper');
 var showCostume = document.querySelectorAll('.costumes-list .item-wrapper');
-var showVideo = document.querySelectorAll('.videos-list .video-wrapper, .videos-list .video-title');
+var showPromoVideo = document.querySelectorAll('.promo-videos .video-wrapper, .promo-videos .video-title');
+var showContentVideo = document.querySelectorAll('.content-videos .video-wrapper');
 var showCallBack = document.querySelector('.promo-callback button');
+var showCallBackFooter = document.querySelector('.footer-phone-order a');
 var popupActor = document.querySelector('.actors-popup');
 var popupVideo = document.querySelector('.video-popup');
 var popupLayer = document.querySelector('.popup-layer');
@@ -12,11 +14,40 @@ var popupClose = document.querySelector('.popup-container .actors-popup-close');
 var imageAddItem = document.querySelectorAll('.image-add-item');
 var imageNumber = 1;
 
-//console.log(priceShowBox);
+var videoFrame = document.getElementById('video-frame');
 
-var orderImageLink = document.querySelectorAll('.top-order-list-description a');
+//-------------------------------------------------validation--------------------------------------------------------
+
+var orderButton = document.querySelectorAll('.order-form input[type=submit], .footer-order-form input[type=submit]');
+for (var i = 0; i < orderButton.length; i++) {
+	orderButton[i].addEventListener('click', function(evt){
+		evt.preventDefault();
+		var orderName = this.parentNode.querySelector('input[name=name]');
+		var orderPhone = this.parentNode.querySelector('input[name=phone]');
+		
+		if(!orderName.value){
+			orderName.classList.add('invalid-form');
+			return;
+		}
+		orderName.classList.remove('invalid-form');
+		
+		if(!orderPhone.value){
+			orderPhone.classList.add('invalid-form');
+			return;
+		}
+		orderPhone.classList.remove('invalid-form');
+	});
+}
+
+//-----------------------------------------------------------popup logic------------------------------------------------
+
 
 showCallBack.addEventListener('click', function(evt){
+	evt.preventDefault();
+	popupActor.classList.add('show-popup');
+	popupLayer.classList.add('show-popup');
+});
+showCallBackFooter.addEventListener('click', function(evt){
 	evt.preventDefault();
 	popupActor.classList.add('show-popup');
 	popupLayer.classList.add('show-popup');
@@ -37,23 +68,65 @@ function showActorPopup(evt) {
 	popupActor.classList.add('show-popup');
 	popupLayer.classList.add('show-popup');
 }
-for (var i = 0; i < showVideo.length; i++) {
-	showVideo[i].addEventListener('click', showVideoPopup);
+
+for (var i = 0; i < showPromoVideo.length; i++) {
+	showPromoVideo[i].classList.add('promo-video-' + Math.floor(i / 2));
+	showPromoVideo[i].addEventListener('click', showVideoPopup);
+}
+for (var i = 0; i < showContentVideo.length; i++) {
+	showContentVideo[i].classList.add('content-video-' + i);
+	console.log(showContentVideo[i]);
+	showContentVideo[i].addEventListener('click', showVideoPopup);
 }
 function showVideoPopup(evt) {
 	evt.preventDefault();
+	var frameLink;
 	popupVideo.classList.add('show-popup');
 	popupLayer.classList.add('show-popup');
+	
+	if(this.classList.contains('promo-video-0')) frameLink = 'THBBVnZ1-r4';
+	else if(this.classList.contains('promo-video-1')) frameLink = 'r6zAoTCJ_rE';
+	else if(this.classList.contains('promo-video-2')) frameLink = 'n8KsXCAfx1o';
+	else if(this.classList.contains('promo-video-3')) frameLink = 'FeUlbqou7Is';
+	else if(this.classList.contains('promo-video-4')) frameLink = 'j-e1qiK8U2A';
+	else if(this.classList.contains('promo-video-5')) frameLink = 'w4-XP5twZFs';
+	else if(this.classList.contains('promo-video-6')) frameLink = 'pr0FKlq6koI';
+	else if(this.classList.contains('promo-video-7')) frameLink = 'UO1UMpoQkYE';
+	else if(this.classList.contains('promo-video-8')) frameLink = '3nGLXna0GRc';
+	else if(this.classList.contains('promo-video-9')) frameLink = 'adq-XT1-JQk';
+	
+	else if(this.classList.contains('content-video-0')) frameLink = 'adq-XT1-JQk';
+	else if(this.classList.contains('content-video-1')) frameLink = 'nfwWHJvRHYs';
+	else if(this.classList.contains('content-video-2')) frameLink = '8ePnMqeZXgk';
+	else if(this.classList.contains('content-video-3')) frameLink = 'iG01yp-CRr0';
+	else if(this.classList.contains('content-video-4')) frameLink = '';
+	else if(this.classList.contains('content-video-5')) frameLink = 'Mb5wbbHIqY4';
+	else if(this.classList.contains('content-video-6')) frameLink = 'n8KsXCAfx1o';
+	else if(this.classList.contains('content-video-7')) frameLink = 'jQ3MRogns5E';
+	else if(this.classList.contains('content-video-8')) frameLink = 'yEtYV5Sj2CY';
+	else if(this.classList.contains('content-video-9')) frameLink = 'v52pIe9hCZI';
+	else if(this.classList.contains('content-video-10')) frameLink = 'w4-XP5twZFs';
+	else if(this.classList.contains('content-video-11')) frameLink = 'SvSLA_QVrnQ';
+	else if(this.classList.contains('content-video-12')) frameLink = '5qiwSZS0nFY';
+	else if(this.classList.contains('content-video-13')) frameLink = 'S4tlMnWx3yo';
+	
+	videoFrame.src = 'https://www.youtube.com/embed/' + frameLink;
 }
+
 popupLayer.addEventListener('click', function(){
 	popupActor.classList.remove('show-popup');
 	popupVideo.classList.remove('show-popup');
 	popupLayer.classList.remove('show-popup');
+	videoFrame.src = '';
 });
 popupClose.addEventListener('click', function(){
 	popupActor.classList.remove('show-popup');
 	popupLayer.classList.remove('show-popup');
 });
+
+//---------------------------------------------------top-order change image-------------------------------------------------//
+
+var orderImageLink = document.querySelectorAll('.top-order-list-description a');
 
 for (var i = 0; i < orderImageLink.length; i++) {
 	orderImageLink[i].addEventListener('mouseover', function(evt){
@@ -67,6 +140,8 @@ for (var i = 0; i < orderImageLink.length; i++) {
 		this.parentNode.parentNode.querySelector('.top-order-image-hover').classList.add('hide-element');
 	});
 }
+
+//------------------------------------------------adding actors and costumes pictures------------------------------------------------------------//
 
 for (var i = 0; i < imageAddItem.length; i++) {
 	imageAddItem[i].addEventListener('click', function(evt){
@@ -139,8 +214,8 @@ if (screen.width < 750) {
 			showCostume[i].removeEventListener('click', showActorPopup);
 			showCostume[i].addEventListener('click', linkReset);
 		}
-		for (var i = 0; i < showVideo.length; i++) {
-			showVideo[i].removeEventListener('click', showVideoPopup);
+		for (var i = 0; i < showPromoVideo.length; i++) {
+			showPromoVideo[i].removeEventListener('click', showVideoPopup);
 		}
 		for (var i = 0; i < topLinks.length; i++) {
 			topLinks[i].addEventListener('click', linkReset);
@@ -286,3 +361,6 @@ for (var i = 0; i < photosNavigationItem.length; i++) {
 		this.classList.add('active');
 	});
 }
+
+//-------------------------------------------iframe--------------------------------------------------------//
+
